@@ -1,0 +1,200 @@
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/styles/range-slider/range-slider.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************/
+/*#region color-primary*/
+/*#endregion*/
+/*#region color-secondary*/
+/*#endregion*/
+/*#region color-accent*/
+/*#endregion*/
+/*#region color-neutral*/
+/*#endregion*/
+/*#region color-error*/
+/*#endregion*/
+/*#region color-success*/
+/*#endregion*/
+/*#region color-warning*/
+/*#endregion*/
+/*#region color-info*/
+/*#endregion*/
+/*#region color-utility*/
+/*#endregion*/
+/*#region radius*/
+/*#endregion*/
+/*#region spacing*/
+/*#endregion*/
+/*#region border-width*/
+/*#endregion*/
+/*#region Typography*/
+/*#region font-size*/
+/*#endregion*/
+/*#region font-weight*/
+/*#endregion*/
+/*#region line-height*/
+/*#endregion*/
+/*#endregion*/
+/*#region shadow*/
+/*#endregion*/
+/*#region size*/
+/*#endregion*/
+/*#region color-base*/
+/*#endregion*/
+/*#region color-special*/
+/*#endregion*/
+/*#region sp-panel*/
+/*#endregion*/
+/*#region alert/modal icons*/
+/*#endregion*/
+.sp-range-slider {
+  position: relative;
+}
+
+.sp-form-range {
+  --track-fill: #0061e8;
+  --track-bg: #e2e7f0;
+  --track-bg-hover: #e2e7f0;
+  --track-thumb: #0061e8;
+  --track-thumb-hover-halo: #d6f5ff;
+  --track-thumb-active-halo: #d6f5ff;
+  width: 100%;
+  height: 2rem;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.sp-form-range::-webkit-slider-thumb {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: -0.375rem;
+  -webkit-appearance: none;
+          appearance: none;
+  background-color: var(--track-thumb);
+  border: 0;
+  border-radius: 1rem;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.sp-form-range::-webkit-slider-thumb:hover {
+  -webkit-box-shadow: 0 0 0 10px color-mix(in srgb, var(--track-thumb-hover-halo), transparent 50%);
+          box-shadow: 0 0 0 10px color-mix(in srgb, var(--track-thumb-hover-halo), transparent 50%);
+}
+.sp-form-range::-moz-range-thumb {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: -0.375rem;
+  -moz-appearance: none;
+       appearance: none;
+  background-color: var(--track-thumb);
+  border: 0;
+  border-radius: 1rem;
+  -moz-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.sp-form-range::-moz-range-thumb:hover {
+  box-shadow: 0 0 0 10px color-mix(in srgb, var(--track-thumb-hover-halo), transparent 50%);
+}
+.sp-form-range:active::-webkit-slider-thumb, .sp-form-range:focus::-webkit-slider-thumb {
+  -webkit-box-shadow: 0 0 0 10px color-mix(in srgb, var(--track-thumb-active-halo), transparent 50%);
+          box-shadow: 0 0 0 10px color-mix(in srgb, var(--track-thumb-active-halo), transparent 50%);
+}
+.sp-form-range:active::-moz-range-thumb, .sp-form-range:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 10px color-mix(in srgb, var(--track-thumb-active-halo), transparent 50%);
+}
+.sp-form-range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0.5rem;
+  color: transparent;
+  cursor: pointer;
+  background-color: var(--track-bg);
+  border-color: transparent;
+  border-radius: 0.25rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--track-fill)), to(var(--track-fill)));
+  background-image: linear-gradient(var(--track-fill), var(--track-fill));
+  background-size: 0 100%;
+  background-size: var(--track-fill-width, 0) 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.sp-form-range::-moz-range-track {
+  width: 100%;
+  height: 0.5rem;
+  color: transparent;
+  cursor: pointer;
+  background-color: var(--track-bg);
+  border-color: transparent;
+  border-radius: 0.25rem;
+  background-image: linear-gradient(var(--track-fill), var(--track-fill));
+  background-size: 0 100%;
+  background-size: var(--track-fill-width, 0) 100%;
+  background-repeat: no-repeat;
+  -moz-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.sp-form-range:hover:not(:disabled)::-webkit-slider-runnable-track {
+  background-color: var(--track-bg-hover);
+}
+.sp-form-range:hover:not(:disabled)::-moz-range-track {
+  background-color: var(--track-bg-hover);
+}
+
+.sp-range-value {
+  --range-tooltip-bg: #0061e8;
+  --range-tooltip-text: #ffffff;
+  position: absolute;
+}
+.sp-range-value span {
+  min-width: 24px;
+  height: 18px;
+  padding: 0px 8px;
+  line-height: 1.4;
+  text-align: center;
+  background: var(--range-tooltip-bg);
+  color: var(--range-tooltip-text);
+  font-size: 0.813rem;
+  display: none;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border-radius: 0.25rem;
+  top: -26px;
+}
+.sp-range-value span:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 5px solid var(--range-tooltip-bg);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -1px;
+}
+
+.sp-disabled {
+  cursor: not-allowed;
+}
+.sp-disabled > * {
+  pointer-events: none;
+}
+.sp-disabled ::-webkit-slider-runnable-track {
+  --track-fill: #cfd5e1;
+  --track-bg: #f1f4f9;
+}
+.sp-disabled ::-webkit-slider-thumb {
+  --track-thumb: #cfd5e1;
+}
+.sp-disabled ::-moz-range-track {
+  --track-fill: #cfd5e1;
+  --track-bg: #f1f4f9;
+}
+.sp-disabled ::-moz-range-thumb {
+  --track-thumb: #cfd5e1;
+}

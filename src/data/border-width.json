@@ -1,0 +1,37 @@
+[
+  {
+    "name": "$border-width-0",
+    "value": "0",
+    "compiledValue": "0"
+  },
+  {
+    "name": "$border-width-xs",
+    "value": "0.06rem",
+    "compiledValue": "0.06rem"
+  },
+  {
+    "name": "$border-width-s",
+    "value": "0.125rem",
+    "compiledValue": "0.125rem"
+  },
+  {
+    "name": "$border-width-m",
+    "value": "0.25rem",
+    "compiledValue": "0.25rem"
+  },
+  {
+    "name": "$border-width-l",
+    "value": "0.375rem",
+    "compiledValue": "0.375rem"
+  },
+  {
+    "name": "$border-width-xl",
+    "value": "0.5rem",
+    "compiledValue": "0.5rem"
+  },
+  {
+    "name": "$border-width-2xl",
+    "value": "0.625rem",
+    "compiledValue": "0.625rem"
+  }
+]

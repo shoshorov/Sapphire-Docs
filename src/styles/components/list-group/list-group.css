@@ -1,0 +1,164 @@
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/styles/list-group/list-group.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+/*#region color-primary*/
+/*#endregion*/
+/*#region color-secondary*/
+/*#endregion*/
+/*#region color-accent*/
+/*#endregion*/
+/*#region color-neutral*/
+/*#endregion*/
+/*#region color-error*/
+/*#endregion*/
+/*#region color-success*/
+/*#endregion*/
+/*#region color-warning*/
+/*#endregion*/
+/*#region color-info*/
+/*#endregion*/
+/*#region color-utility*/
+/*#endregion*/
+/*#region radius*/
+/*#endregion*/
+/*#region spacing*/
+/*#endregion*/
+/*#region border-width*/
+/*#endregion*/
+/*#region Typography*/
+/*#region font-size*/
+/*#endregion*/
+/*#region font-weight*/
+/*#endregion*/
+/*#region line-height*/
+/*#endregion*/
+/*#endregion*/
+/*#region shadow*/
+/*#endregion*/
+/*#region size*/
+/*#endregion*/
+/*#region color-base*/
+/*#endregion*/
+/*#region color-special*/
+/*#endregion*/
+/*#region sp-panel*/
+/*#endregion*/
+/*#region alert/modal icons*/
+/*#endregion*/
+.sp-list-group {
+  --list-item-color: #11152a;
+  --list-item-bg: transparent;
+  --list-item-border-color: #cfd5e1;
+  --list-item-actions-color: #11152a;
+  --list-item-actions-hover-color: #11152a;
+  --list-item-actions-hover-bg: #e2e7f0;
+  --list-item-actions-active-color: #11152a;
+  --list-item-actions-active-bg: #e2e7f0;
+  --list-item-disabled-color: #9ea7b8;
+  --list-item-disabled-bg: transparent;
+  --list-item-active-color: #11152a;
+  --list-item-active-bg: #e2e7f0;
+  --list-item-active-border-color: #cfd5e1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: 0.5rem;
+}
+.sp-list-group.sp-no-hover .sp-list-item:hover,
+.sp-list-group.sp-no-hover .sp-list-item.sp-highlighted {
+  background-color: transparent;
+  cursor: auto;
+}
+
+.sp-list-group-numbered {
+  list-style-type: none;
+  counter-reset: section;
+}
+.sp-list-group-numbered > .sp-list-item::before {
+  content: counters(section, ".") ". ";
+  counter-increment: section;
+}
+
+.sp-list-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--list-item-color);
+  text-decoration: none;
+  background-color: var(--list-item-bg);
+}
+.sp-list-item.sp-active {
+  z-index: 2;
+  color: var(--list-item-active-color);
+  background-color: var(--list-item-active-bg);
+  border-color: var(--list-item-active-border-color);
+}
+.sp-list-item.sp-highlighted, .sp-list-item:hover, .sp-list-item:focus {
+  z-index: 2;
+  color: var(--list-item-actions-hover-color);
+  background-color: var(--list-item-actions-hover-bg);
+  border-color: var(--list-item-active-border-color);
+  cursor: pointer;
+}
+.sp-list-item.sp-disabled, .sp-list-item:disabled {
+  color: var(--list-item-disabled-color);
+  pointer-events: none;
+  background-color: var(--list-item-disabled-bg);
+}
+.sp-list-item .sp-form-check {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sp-has-item-border .sp-list-item, .sp-has-item-border.sp-list-item {
+  border-bottom: 0.06rem solid var(--list-item-border-color);
+}
+.sp-has-item-border .sp-list-item:last-child, .sp-has-item-border.sp-list-item:last-child {
+  border-bottom: 0;
+}
+.sp-has-item-border .sp-list-item + .sp-list-item, .sp-has-item-border.sp-list-item + .sp-list-item {
+  border-top-width: 0;
+}
+
+.sp-list-item-actions,
+.sp-list-group a {
+  width: 100%;
+  color: var(--list-item-actions-color);
+  text-align: inherit;
+}
+.sp-list-item-actions:hover, .sp-list-item-actions:focus,
+.sp-list-group a:hover,
+.sp-list-group a:focus {
+  z-index: 1;
+  color: var(--list-item-actions-hover-color);
+  text-decoration: none;
+  background-color: var(--list-item-actions-hover-bg);
+}
+.sp-list-item-actions:active,
+.sp-list-group a:active {
+  color: var(--list-item-actions-active-color);
+  background-color: var(--list-item-actions-active-bg);
+}
+
+.sp-list-group-complex .sp-list-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.sp-list-group-complex .sp-list-item .sp-side-right {
+  margin-left: auto;
+}

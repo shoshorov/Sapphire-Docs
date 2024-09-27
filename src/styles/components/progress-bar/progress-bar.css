@@ -1,0 +1,108 @@
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/styles/progress-bar/progress-bar.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************/
+/*#region color-primary*/
+/*#endregion*/
+/*#region color-secondary*/
+/*#endregion*/
+/*#region color-accent*/
+/*#endregion*/
+/*#region color-neutral*/
+/*#endregion*/
+/*#region color-error*/
+/*#endregion*/
+/*#region color-success*/
+/*#endregion*/
+/*#region color-warning*/
+/*#endregion*/
+/*#region color-info*/
+/*#endregion*/
+/*#region color-utility*/
+/*#endregion*/
+/*#region radius*/
+/*#endregion*/
+/*#region spacing*/
+/*#endregion*/
+/*#region border-width*/
+/*#endregion*/
+/*#region Typography*/
+/*#region font-size*/
+/*#endregion*/
+/*#region font-weight*/
+/*#endregion*/
+/*#region line-height*/
+/*#endregion*/
+/*#endregion*/
+/*#region shadow*/
+/*#endregion*/
+/*#region size*/
+/*#endregion*/
+/*#region color-base*/
+/*#endregion*/
+/*#region color-special*/
+/*#endregion*/
+/*#region sp-panel*/
+/*#endregion*/
+/*#region alert/modal icons*/
+/*#endregion*/
+.sp-progress {
+  --progress-bg: #cfd5e1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 7px;
+  overflow: hidden;
+  background-color: var(--progress-bg);
+  border-radius: 0.25rem;
+}
+.sp-progress.sp-danger {
+  --progress-bar-bg: #fc3092;
+}
+.sp-progress.sp-warning {
+  --progress-bar-bg: #f6cf02;
+}
+.sp-progress.sp-success {
+  --progress-bar-bg: #1cdaa1;
+}
+.sp-progress.sp-info {
+  --progress-bar-bg: #30cbfc;
+}
+.sp-progress.sp-primary {
+  --progress-bar-bg: #0061e8;
+}
+.sp-progress.sp-secondary {
+  --progress-bar-bg: #7c48e7;
+}
+.sp-progress .sp-progress-bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  background-color: var(--progress-bar-bg);
+  -webkit-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+
+.sp-progress-container.sp-has-label .sp-text {
+  display: block;
+}
+.sp-progress-container .sp-text {
+  --progress-title: #11152a;
+  display: none;
+  color: var(--progress-title);
+  font-size: 0.813rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}

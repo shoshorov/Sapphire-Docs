@@ -1,0 +1,26 @@
+---
+// FontAwesomeIcon.astro
+// Make sure to install @fortawesome/fontawesome-free in your project
+
+interface Props {
+  name: string;
+  color?: string;
+  style?: 'solid' | 'regular' | 'light' | 'thin' | 'duotone' | 'brands';
+ 
+}
+
+const { name, color, style = 'light' } = Astro.props;
+
+// Map style to Font Awesome style prefix
+const stylePrefix = {
+  solid: 'fa-solid',
+  regular: 'fa-regular',
+  light: 'fa-light',
+  thin: 'fa-thin',
+  duotone: 'fa-duotone',
+  brands: 'fa-brands',
+}[style];
+
+---
+
+<i class={`${stylePrefix} fa-${name} ${color} icon` }></i>

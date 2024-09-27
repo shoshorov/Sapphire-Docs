@@ -1,0 +1,177 @@
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/styles/alphabet-list/alphabet-list.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/*#region color-primary*/
+/*#endregion*/
+/*#region color-secondary*/
+/*#endregion*/
+/*#region color-accent*/
+/*#endregion*/
+/*#region color-neutral*/
+/*#endregion*/
+/*#region color-error*/
+/*#endregion*/
+/*#region color-success*/
+/*#endregion*/
+/*#region color-warning*/
+/*#endregion*/
+/*#region color-info*/
+/*#endregion*/
+/*#region color-utility*/
+/*#endregion*/
+/*#region radius*/
+/*#endregion*/
+/*#region spacing*/
+/*#endregion*/
+/*#region border-width*/
+/*#endregion*/
+/*#region Typography*/
+/*#region font-size*/
+/*#endregion*/
+/*#region font-weight*/
+/*#endregion*/
+/*#region line-height*/
+/*#endregion*/
+/*#endregion*/
+/*#region shadow*/
+/*#endregion*/
+/*#region size*/
+/*#endregion*/
+/*#region color-base*/
+/*#endregion*/
+/*#region color-special*/
+/*#endregion*/
+/*#region sp-panel*/
+/*#endregion*/
+/*#region alert/modal icons*/
+/*#endregion*/
+.sp-alphabet-list {
+  --contact-item-hover: #f1f4f9;
+  --contact-list-border-color: #cfd5e1;
+  --contact-list-char-color: #6d7688;
+  --contact-list-selected-char-color: #0061e8;
+  --contact-list-group-color: color-alphabet-list-group;
+  --alphabet-list-group-selected: #0061e8;
+  --alphabet-list-group-selected-text-color: #ffffff;
+  --contact-list-border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  height: calc(100% - 64px);
+}
+.sp-alphabet-list .sp-alphabet-list-chars {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  height: 100%;
+  padding-right: 0.5rem;
+}
+.sp-alphabet-list .sp-alphabet-list-chars .sp-alphabet-char {
+  width: 2.25rem;
+  height: 1.5rem;
+  padding: 0;
+  color: var(--contact-list-char-color);
+  font-size: 0.813rem;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sp-alphabet-list .sp-alphabet-list-chars .sp-alphabet-char:hover {
+  cursor: pointer;
+}
+.sp-alphabet-list .sp-alphabet-list-chars .sp-alphabet-char.sp-alphabet-char-selected {
+  position: relative;
+  font-size: 1.438rem;
+  color: var(--contact-list-selected-char-color);
+}
+.sp-alphabet-list .sp-alphabet-list-chars .sp-alphabet-char.sp-alphabet-char-selected::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4px;
+  background-color: var(--contact-list-selected-char-color);
+}
+.sp-alphabet-list.sp-alphabet-list-hover .sp-alphabet-list-item:hover {
+  background-color: var(--contact-item-hover) !important;
+}
+.sp-alphabet-list.sp-alphabet-list-sticky .sp-alphabet-list-group {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.sp-alphabet-list.sp-alphabet-list-expandable .sp-alphabet-list-group:hover {
+  cursor: pointer;
+}
+.sp-alphabet-list .sp-alphabet-items {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-y: auto;
+  border-radius: var(--contact-list-border-radius);
+  height: calc(100% - 64px);
+  scrollbar-width: inherit;
+  scrollbar-color: inherit;
+}
+@media (min-width: 1200px) {
+  .sp-alphabet-list .sp-alphabet-items {
+    height: 100%;
+  }
+}
+.sp-alphabet-list .sp-alphabet-items .sp-alphabet-list-group {
+  --table-group-row-bg: #e2e7f0;
+  --table-group-row-text: #4c5469;
+  padding: 0 12px;
+  background-color: var(--table-group-row-bg);
+  color: var(--contact-list-group-color);
+  font-size: 0.813rem;
+  font-weight: 600;
+}
+.sp-alphabet-list .sp-alphabet-items .sp-alphabet-list-item {
+  padding: 20px 16px;
+  border-bottom: 1px solid #cfd5e1;
+}
+.sp-alphabet-list .sp-alphabet-items .sp-alphabet-list-item::last-of-type {
+  border: 0;
+}
+.sp-alphabet-list .sp-alphabet-items .sp-alphabet-list-group-selected {
+  background-color: var(--alphabet-list-group-selected);
+  color: var(--alphabet-list-group-selected-text-color);
+}
+.sp-alphabet-list .sp-alphabet-items .sp-alphabet-list-group-selected.sp-alphabet-list-group-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}

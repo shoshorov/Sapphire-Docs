@@ -1,0 +1,399 @@
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/styles/calendar/calendar.scss ***!
+  \******************************************************************************************************************************************************************************************************************************/
+/*#region color-primary*/
+/*#endregion*/
+/*#region color-secondary*/
+/*#endregion*/
+/*#region color-accent*/
+/*#endregion*/
+/*#region color-neutral*/
+/*#endregion*/
+/*#region color-error*/
+/*#endregion*/
+/*#region color-success*/
+/*#endregion*/
+/*#region color-warning*/
+/*#endregion*/
+/*#region color-info*/
+/*#endregion*/
+/*#region color-utility*/
+/*#endregion*/
+/*#region radius*/
+/*#endregion*/
+/*#region spacing*/
+/*#endregion*/
+/*#region border-width*/
+/*#endregion*/
+/*#region Typography*/
+/*#region font-size*/
+/*#endregion*/
+/*#region font-weight*/
+/*#endregion*/
+/*#region line-height*/
+/*#endregion*/
+/*#endregion*/
+/*#region shadow*/
+/*#endregion*/
+/*#region size*/
+/*#endregion*/
+/*#region color-base*/
+/*#endregion*/
+/*#region color-special*/
+/*#endregion*/
+/*#region sp-panel*/
+/*#endregion*/
+/*#region alert/modal icons*/
+/*#endregion*/
+.sp-calendar {
+  --calendar-bg: #ffffff;
+  --calendar-footer-border: #cfd5e1;
+  --calendar-header-border: #cfd5e1;
+  --calendar-controls-icon-hover: #023caf;
+  --calendar-controls-icon-active: #0c2e97;
+  --calendar-controls-btn-bg: #ffffff;
+  --calendar-controls-btn-text: #11152a;
+  --calendar-controls-btn-bg-hover: #d6f5ff;
+  --calendar-controls-btn-text-hover: #023caf;
+  --calendar-controls-btn-bg-active: #c2f0ff;
+  --calendar-controls-btn-text-active: #0c2e97;
+  --calendar-controls-btn-custom-text: #0061e8;
+  --calendar-cell-bg-hover: #d6f5ff;
+  --calendar-cell-bg-selected: #0061e8;
+  --calendar-cell-text-selected: #ffffff;
+  --calendar-cell-text-disabled: #cfd5e1;
+  --calendar-dates-not-current-month: #9ea7b8;
+  --calendar-today-bg: transparent;
+  --calendar-today-text: #11152a;
+  --calendar-today-border: #0061e8;
+  background-color: var(--calendar-bg);
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20rem;
+}
+@media only screen and (min-width: 576px) {
+  .sp-calendar {
+    width: 24rem;
+  }
+}
+.sp-calendar .sp-calendar-main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
+  padding: 0 1rem 1rem;
+}
+.sp-calendar .sp-calendar-header {
+  padding: 0.5rem 1rem;
+}
+.sp-calendar .sp-calendar-header .sp-calendar-controls {
+  padding: 0 0 0.5rem;
+  border-bottom: 1px solid var(--calendar-header-border);
+}
+.sp-calendar .sp-calendar-header .sp-calendar-controls .button {
+  font-weight: 600;
+}
+.sp-calendar .sp-calendar-header .sp-calendar-controls .button i {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sp-calendar .sp-calendar-header .sp-calendar-controls .button:hover i {
+  color: var(--calendar-controls-icon-hover);
+}
+.sp-calendar .sp-calendar-header .sp-calendar-controls .button:active i {
+  color: var(--calendar-controls-icon-active);
+}
+.sp-calendar .sp-calendar-footer {
+  border-top: 1px solid var(--calendar-footer-border);
+}
+.sp-calendar .sp-calendar-footer .sp-calendar-controls button {
+  border-radius: 0.25rem;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
+  margin: 0.5rem 1rem;
+}
+.sp-calendar .sp-calendar-controls {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sp-calendar .sp-calendar-controls .sp-calendar-view-switch {
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
+  color: var(--calendar-controls-btn-custom-text);
+}
+.sp-calendar .sp-calendar-controls .sp-calendar-next,
+.sp-calendar .sp-calendar-controls .sp-calendar-prev {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.sp-calendar .sp-calendar-controls .sp-calendar-next.sp-disabled,
+.sp-calendar .sp-calendar-controls .sp-calendar-prev.sp-disabled {
+  visibility: hidden;
+}
+.sp-calendar .sp-calendar-controls button {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0.5rem;
+  font-weight: 600;
+  background-color: var(--calendar-controls-btn-bg);
+  color: var(--calendar-controls-btn-text);
+  border: 0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.sp-calendar .sp-calendar-controls button:hover {
+  background-color: var(--calendar-controls-btn-bg-hover);
+  color: var(--calendar-controls-btn-text-hover);
+}
+.sp-calendar .sp-calendar-controls button:active {
+  background-color: var(--calendar-controls-btn-bg-active);
+  color: var(--calendar-controls-btn-text-active);
+}
+.sp-calendar .sp-calendar-controls button[disabled] {
+  cursor: not-allowed;
+}
+.sp-calendar .sp-calendar-days,
+.sp-calendar .sp-calendar-months,
+.sp-calendar .sp-calendar-years {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.sp-calendar .sp-calendar-days .sp-day:not(.sp-disabled):hover,
+.sp-calendar .sp-calendar-days .sp-month:not(.sp-disabled):hover,
+.sp-calendar .sp-calendar-days .sp-year:not(.sp-disabled):hover,
+.sp-calendar .sp-calendar-months .sp-day:not(.sp-disabled):hover,
+.sp-calendar .sp-calendar-months .sp-month:not(.sp-disabled):hover,
+.sp-calendar .sp-calendar-months .sp-year:not(.sp-disabled):hover,
+.sp-calendar .sp-calendar-years .sp-day:not(.sp-disabled):hover,
+.sp-calendar .sp-calendar-years .sp-month:not(.sp-disabled):hover,
+.sp-calendar .sp-calendar-years .sp-year:not(.sp-disabled):hover {
+  background-color: var(--calendar-cell-bg-hover);
+  cursor: pointer;
+}
+.sp-calendar .sp-calendar-days .sp-day.sp-selected,
+.sp-calendar .sp-calendar-days .sp-month.sp-selected,
+.sp-calendar .sp-calendar-days .sp-year.sp-selected,
+.sp-calendar .sp-calendar-months .sp-day.sp-selected,
+.sp-calendar .sp-calendar-months .sp-month.sp-selected,
+.sp-calendar .sp-calendar-months .sp-year.sp-selected,
+.sp-calendar .sp-calendar-years .sp-day.sp-selected,
+.sp-calendar .sp-calendar-years .sp-month.sp-selected,
+.sp-calendar .sp-calendar-years .sp-year.sp-selected {
+  background-color: var(--calendar-cell-bg-selected);
+  color: var(--calendar-cell-text-selected);
+  font-weight: 600;
+}
+.sp-calendar .sp-calendar-days .sp-day.sp-selected:hover,
+.sp-calendar .sp-calendar-days .sp-month.sp-selected:hover,
+.sp-calendar .sp-calendar-days .sp-year.sp-selected:hover,
+.sp-calendar .sp-calendar-months .sp-day.sp-selected:hover,
+.sp-calendar .sp-calendar-months .sp-month.sp-selected:hover,
+.sp-calendar .sp-calendar-months .sp-year.sp-selected:hover,
+.sp-calendar .sp-calendar-years .sp-day.sp-selected:hover,
+.sp-calendar .sp-calendar-years .sp-month.sp-selected:hover,
+.sp-calendar .sp-calendar-years .sp-year.sp-selected:hover {
+  background-color: var(--calendar-cell-bg-selected);
+  color: var(--calendar-cell-text-selected);
+  font-weight: 600;
+}
+.sp-calendar .sp-calendar-days .sp-day.sp-disabled,
+.sp-calendar .sp-calendar-days .sp-month.sp-disabled,
+.sp-calendar .sp-calendar-days .sp-year.sp-disabled,
+.sp-calendar .sp-calendar-months .sp-day.sp-disabled,
+.sp-calendar .sp-calendar-months .sp-month.sp-disabled,
+.sp-calendar .sp-calendar-months .sp-year.sp-disabled,
+.sp-calendar .sp-calendar-years .sp-day.sp-disabled,
+.sp-calendar .sp-calendar-years .sp-month.sp-disabled,
+.sp-calendar .sp-calendar-years .sp-year.sp-disabled {
+  color: var(--calendar-cell-text-disabled) !important;
+}
+.sp-calendar .sp-calendar-days .sp-day.sp-disabled,
+.sp-calendar .sp-calendar-days .sp-month.sp-disabled,
+.sp-calendar .sp-calendar-days .sp-year.sp-disabled,
+.sp-calendar .sp-calendar-months .sp-day.sp-disabled,
+.sp-calendar .sp-calendar-months .sp-month.sp-disabled,
+.sp-calendar .sp-calendar-months .sp-year.sp-disabled,
+.sp-calendar .sp-calendar-years .sp-day.sp-disabled,
+.sp-calendar .sp-calendar-years .sp-month.sp-disabled,
+.sp-calendar .sp-calendar-years .sp-year.sp-disabled {
+  cursor: not-allowed;
+}
+.sp-calendar .sp-calendar-days .sp-day.sp-next-month-day:not(.sp-disabled), .sp-calendar .sp-calendar-days .sp-day.sp-prev-month-day:not(.sp-disabled),
+.sp-calendar .sp-calendar-days .sp-month.sp-next-month-day:not(.sp-disabled),
+.sp-calendar .sp-calendar-days .sp-month.sp-prev-month-day:not(.sp-disabled),
+.sp-calendar .sp-calendar-days .sp-year.sp-next-month-day:not(.sp-disabled),
+.sp-calendar .sp-calendar-days .sp-year.sp-prev-month-day:not(.sp-disabled),
+.sp-calendar .sp-calendar-months .sp-day.sp-next-month-day:not(.sp-disabled),
+.sp-calendar .sp-calendar-months .sp-day.sp-prev-month-day:not(.sp-disabled),
+.sp-calendar .sp-calendar-months .sp-month.sp-next-month-day:not(.sp-disabled),
+.sp-calendar .sp-calendar-months .sp-month.sp-prev-month-day:not(.sp-disabled),
+.sp-calendar .sp-calendar-months .sp-year.sp-next-month-day:not(.sp-disabled),
+.sp-calendar .sp-calendar-months .sp-year.sp-prev-month-day:not(.sp-disabled),
+.sp-calendar .sp-calendar-years .sp-day.sp-next-month-day:not(.sp-disabled),
+.sp-calendar .sp-calendar-years .sp-day.sp-prev-month-day:not(.sp-disabled),
+.sp-calendar .sp-calendar-years .sp-month.sp-next-month-day:not(.sp-disabled),
+.sp-calendar .sp-calendar-years .sp-month.sp-prev-month-day:not(.sp-disabled),
+.sp-calendar .sp-calendar-years .sp-year.sp-next-month-day:not(.sp-disabled),
+.sp-calendar .sp-calendar-years .sp-year.sp-prev-month-day:not(.sp-disabled) {
+  color: var(--calendar-dates-not-current-month);
+}
+.sp-calendar .sp-calendar-days .sp-day.sp-next-month-day.sp-selected, .sp-calendar .sp-calendar-days .sp-day.sp-prev-month-day.sp-selected,
+.sp-calendar .sp-calendar-days .sp-month.sp-next-month-day.sp-selected,
+.sp-calendar .sp-calendar-days .sp-month.sp-prev-month-day.sp-selected,
+.sp-calendar .sp-calendar-days .sp-year.sp-next-month-day.sp-selected,
+.sp-calendar .sp-calendar-days .sp-year.sp-prev-month-day.sp-selected,
+.sp-calendar .sp-calendar-months .sp-day.sp-next-month-day.sp-selected,
+.sp-calendar .sp-calendar-months .sp-day.sp-prev-month-day.sp-selected,
+.sp-calendar .sp-calendar-months .sp-month.sp-next-month-day.sp-selected,
+.sp-calendar .sp-calendar-months .sp-month.sp-prev-month-day.sp-selected,
+.sp-calendar .sp-calendar-months .sp-year.sp-next-month-day.sp-selected,
+.sp-calendar .sp-calendar-months .sp-year.sp-prev-month-day.sp-selected,
+.sp-calendar .sp-calendar-years .sp-day.sp-next-month-day.sp-selected,
+.sp-calendar .sp-calendar-years .sp-day.sp-prev-month-day.sp-selected,
+.sp-calendar .sp-calendar-years .sp-month.sp-next-month-day.sp-selected,
+.sp-calendar .sp-calendar-years .sp-month.sp-prev-month-day.sp-selected,
+.sp-calendar .sp-calendar-years .sp-year.sp-next-month-day.sp-selected,
+.sp-calendar .sp-calendar-years .sp-year.sp-prev-month-day.sp-selected {
+  color: var(--calendar-cell-text-selected);
+}
+.sp-calendar .sp-calendar-days .sp-day.sp-today:not(.sp-selected),
+.sp-calendar .sp-calendar-days .sp-month.sp-today:not(.sp-selected),
+.sp-calendar .sp-calendar-days .sp-year.sp-today:not(.sp-selected),
+.sp-calendar .sp-calendar-months .sp-day.sp-today:not(.sp-selected),
+.sp-calendar .sp-calendar-months .sp-month.sp-today:not(.sp-selected),
+.sp-calendar .sp-calendar-months .sp-year.sp-today:not(.sp-selected),
+.sp-calendar .sp-calendar-years .sp-day.sp-today:not(.sp-selected),
+.sp-calendar .sp-calendar-years .sp-month.sp-today:not(.sp-selected),
+.sp-calendar .sp-calendar-years .sp-year.sp-today:not(.sp-selected) {
+  background-color: var(--calendar-today-bg);
+  -webkit-box-shadow: inset 0 0 0px 2px var(--calendar-today-border);
+          box-shadow: inset 0 0 0px 2px var(--calendar-today-border);
+}
+.sp-calendar .sp-calendar-days .sp-day.sp-today:not(.sp-selected):not(.sp-disabled),
+.sp-calendar .sp-calendar-days .sp-month.sp-today:not(.sp-selected):not(.sp-disabled),
+.sp-calendar .sp-calendar-days .sp-year.sp-today:not(.sp-selected):not(.sp-disabled),
+.sp-calendar .sp-calendar-months .sp-day.sp-today:not(.sp-selected):not(.sp-disabled),
+.sp-calendar .sp-calendar-months .sp-month.sp-today:not(.sp-selected):not(.sp-disabled),
+.sp-calendar .sp-calendar-months .sp-year.sp-today:not(.sp-selected):not(.sp-disabled),
+.sp-calendar .sp-calendar-years .sp-day.sp-today:not(.sp-selected):not(.sp-disabled),
+.sp-calendar .sp-calendar-years .sp-month.sp-today:not(.sp-selected):not(.sp-disabled),
+.sp-calendar .sp-calendar-years .sp-year.sp-today:not(.sp-selected):not(.sp-disabled) {
+  color: var(--calendar-today-text);
+  font-weight: 600;
+}
+.sp-calendar .sp-days-of-week {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sp-calendar .sp-days-of-week .sp-day {
+  font-weight: 600;
+}
+.sp-calendar .sp-day {
+  -webkit-flex-basis: 14.2857142857%;
+      -ms-flex-preferred-size: 14.2857142857%;
+          flex-basis: 14.2857142857%;
+}
+.sp-calendar .sp-month,
+.sp-calendar .sp-year {
+  -webkit-flex-basis: 33.3333333333%;
+      -ms-flex-preferred-size: 33.3333333333%;
+          flex-basis: 33.3333333333%;
+}
+.sp-calendar .sp-day,
+.sp-calendar .sp-month,
+.sp-calendar .sp-year {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2.75rem;
+  border-radius: 0.25rem;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.sp-calendar .sp-day.sp-forbidden,
+.sp-calendar .sp-month.sp-forbidden,
+.sp-calendar .sp-year.sp-forbidden {
+  cursor: not-allowed !important;
+  color: #cfd5e1 !important;
+}
+.sp-calendar .sp-day.sp-forbidden:hover:not(.sp-selected),
+.sp-calendar .sp-month.sp-forbidden:hover:not(.sp-selected),
+.sp-calendar .sp-year.sp-forbidden:hover:not(.sp-selected) {
+  background-color: transparent !important;
+}

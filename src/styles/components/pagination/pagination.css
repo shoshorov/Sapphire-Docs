@@ -1,0 +1,235 @@
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/styles/pagination/pagination.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+/*#region color-primary*/
+/*#endregion*/
+/*#region color-secondary*/
+/*#endregion*/
+/*#region color-accent*/
+/*#endregion*/
+/*#region color-neutral*/
+/*#endregion*/
+/*#region color-error*/
+/*#endregion*/
+/*#region color-success*/
+/*#endregion*/
+/*#region color-warning*/
+/*#endregion*/
+/*#region color-info*/
+/*#endregion*/
+/*#region color-utility*/
+/*#endregion*/
+/*#region radius*/
+/*#endregion*/
+/*#region spacing*/
+/*#endregion*/
+/*#region border-width*/
+/*#endregion*/
+/*#region Typography*/
+/*#region font-size*/
+/*#endregion*/
+/*#region font-weight*/
+/*#endregion*/
+/*#region line-height*/
+/*#endregion*/
+/*#endregion*/
+/*#region shadow*/
+/*#endregion*/
+/*#region size*/
+/*#endregion*/
+/*#region color-base*/
+/*#endregion*/
+/*#region color-special*/
+/*#endregion*/
+/*#region sp-panel*/
+/*#endregion*/
+/*#region alert/modal icons*/
+/*#endregion*/
+.sp-pagination {
+  --pagination-link-text: #11152a;
+  --pagination-link-bg: transparent;
+  --pagination-link-border: transparent;
+  --pagination-link-text-hover: #11152a;
+  --pagination-link-bg-hover: transparent;
+  --pagination-link-hover-border: #0061e8;
+  --pagination-link-text-active: #0061e8;
+  --pagination-link-bg-active: transparent;
+  --pagination-link-active-border: #0061e8;
+  --pagination-link-text-disabled: #9ea7b8;
+  --pagination-link-bg-disabled: transparent;
+  --pagination-link-disabled-border: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 0.25rem;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+.sp-pagination .sp-page-item.sp-disabled {
+  cursor: not-allowed;
+}
+.sp-pagination .sp-page-link {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 3.5rem;
+  color: var(--pagination-link-text);
+  background-color: var(--pagination-link-bg);
+  -webkit-box-shadow: 0 0 0 1px inset var(--pagination-link-border);
+          box-shadow: 0 0 0 1px inset var(--pagination-link-border);
+  text-decoration: none;
+}
+.sp-pagination .sp-page-link:hover {
+  z-index: 2;
+  color: var(--pagination-link-text-hover);
+  background-color: var(--pagination-link-bg-hover);
+  -webkit-box-shadow: 0 0 0 1px inset var(--pagination-link-hover-border);
+          box-shadow: 0 0 0 1px inset var(--pagination-link-hover-border);
+  cursor: pointer;
+}
+.sp-pagination .sp-page-link.sp-disabled,
+.sp-pagination .sp-disabled > .sp-page-link {
+  pointer-events: none;
+  color: var(--pagination-link-text-disabled);
+  background-color: var(--pagination-link-bg-disabled);
+  -webkit-box-shadow: 0 0 0 1px inset var(--pagination-link-disabled-border);
+          box-shadow: 0 0 0 1px inset var(--pagination-link-disabled-border);
+}
+.sp-pagination .sp-page-link.sp-active,
+.sp-pagination .sp-active > .sp-page-link {
+  color: var(--pagination-link-text-active);
+  background-color: var(--pagination-link-bg-active);
+  -webkit-box-shadow: 0 0 0 1px inset var(--pagination-link-active-border);
+          box-shadow: 0 0 0 1px inset var(--pagination-link-active-border);
+}
+.sp-pagination-filter, .sp-pagination-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+@media (min-width: 1200px) {
+  .sp-pagination-filter, .sp-pagination-wrapper {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+.sp-pagination .sp-page-item.sp-no-hover {
+  pointer-events: none;
+}
+.sp-pagination-wrapper {
+  --pagination-info-text: #6d7688;
+  --pagination-input-size: 2.5rem;
+}
+.sp-pagination-wrapper .sp-pagination-filter,
+.sp-pagination-wrapper .sp-pagination-info,
+.sp-pagination-wrapper .sp-pagination {
+  margin-top: 2rem;
+}
+.sp-pagination-wrapper .sp-pagination-filter,
+.sp-pagination-wrapper .sp-pagination-info {
+  color: var(--pagination-info-text);
+}
+@media (min-width: 576px) {
+  .sp-pagination-wrapper.sp-has-input .sp-pagination {
+    padding-left: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .sp-pagination-wrapper.sp-has-input .sp-pagination {
+    margin-left: auto;
+  }
+}
+.sp-pagination-wrapper.sp-reversed {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (min-width: 1200px) {
+  .sp-pagination-wrapper.sp-reversed {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+.sp-pagination-wrapper.sp-reversed .sp-pagination {
+  margin-left: 0;
+  margin-left: initial;
+}
+@media (min-width: 768px) {
+  .sp-pagination-wrapper.sp-reversed .sp-pagination {
+    margin-right: auto;
+  }
+}
+.sp-pagination-wrapper.sp-reversed .sp-pagination-info {
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
+}
+.sp-pagination-wrapper .sp-pagination {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.sp-pagination-filter .sp-input-container {
+  margin: 0 12px;
+}
+.sp-pagination .sp-input-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: var(--pagination-input-size);
+}
+.sp-pagination .sp-input-wrapper .sp-form-control {
+  text-align: center;
+  height: var(--pagination-input-size);
+  padding: 0.5rem;
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "name": "$font-weight-regular",
+    "value": "400",
+    "compiledValue": "400"
+  },
+  {
+    "name": "$font-weight-semibold",
+    "value": "600",
+    "compiledValue": "600"
+  },
+  {
+    "name": "$font-weight-bold",
+    "value": "700",
+    "compiledValue": "700"
+  }
+]

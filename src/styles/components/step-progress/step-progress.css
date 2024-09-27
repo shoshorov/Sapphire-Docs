@@ -1,0 +1,322 @@
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/styles/step-progress/step-progress.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/*#region color-primary*/
+/*#endregion*/
+/*#region color-secondary*/
+/*#endregion*/
+/*#region color-accent*/
+/*#endregion*/
+/*#region color-neutral*/
+/*#endregion*/
+/*#region color-error*/
+/*#endregion*/
+/*#region color-success*/
+/*#endregion*/
+/*#region color-warning*/
+/*#endregion*/
+/*#region color-info*/
+/*#endregion*/
+/*#region color-utility*/
+/*#endregion*/
+/*#region radius*/
+/*#endregion*/
+/*#region spacing*/
+/*#endregion*/
+/*#region border-width*/
+/*#endregion*/
+/*#region Typography*/
+/*#region font-size*/
+/*#endregion*/
+/*#region font-weight*/
+/*#endregion*/
+/*#region line-height*/
+/*#endregion*/
+/*#endregion*/
+/*#region shadow*/
+/*#endregion*/
+/*#region size*/
+/*#endregion*/
+/*#region color-base*/
+/*#endregion*/
+/*#region color-special*/
+/*#endregion*/
+/*#region sp-panel*/
+/*#endregion*/
+/*#region alert/modal icons*/
+/*#endregion*/
+.sp-step-progress {
+  --step-completed-icon: #ffffff;
+  --step-current-label: #0061e8;
+  --step-default-bg: #ffffff;
+  --step-default-text: #6d7688;
+  --step-default-border-color: #cfd5e1;
+  --step-default-separator-color: #cfd5e1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.sp-step-progress.sp-no-label .sp-step-name {
+  display: none;
+}
+.sp-step-progress.sp-vertical {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0;
+}
+.sp-step-progress.sp-vertical .sp-step-item {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 8px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.sp-step-progress.sp-vertical .sp-step-item:before, .sp-step-progress.sp-vertical .sp-step-item:after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  left: 8px;
+  top: 0;
+  background-color: var(--step-default-separator-color);
+}
+.sp-step-progress.sp-vertical .sp-step-item:before {
+  z-index: 2;
+}
+.sp-step-progress.sp-vertical .sp-step-item:after {
+  z-index: 3;
+}
+.sp-step-progress.sp-vertical .sp-step-item .sp-step-counter {
+  position: relative;
+  z-index: 5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  border: 1px solid var(--step-default-border-color);
+  margin-bottom: 0;
+  font-size: 0.688rem;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 1.125rem;
+      -ms-flex: 0 0 1.125rem;
+          flex: 0 0 1.125rem;
+}
+.sp-step-progress.sp-vertical .sp-step-item .sp-step-name {
+  display: block;
+  text-align: left;
+  font-size: 0.813rem;
+  font-weight: 400;
+}
+.sp-step-progress.sp-vertical .sp-step-item.sp-completed .sp-step-counter {
+  color: var(--step-completed-icon);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 0.75rem;
+}
+.sp-step-progress.sp-vertical .sp-step-item:last-child::before {
+  display: none;
+}
+.sp-step-progress.sp-primary {
+  --step-bg: #0061e8;
+}
+.sp-step-progress.sp-secondary {
+  --step-bg: #7c48e7;
+}
+.sp-step-progress .sp-step-item.sp-completed .sp-step-counter {
+  background-color: var(--step-bg);
+  border-color: var(--step-bg);
+}
+.sp-step-progress .sp-step-item.sp-completed:after {
+  background-color: var(--step-bg);
+}
+.sp-step-progress .sp-step-item.sp-incomplete .sp-step-counter {
+  background-color: var(--step-default-bg);
+  border-style: dashed;
+  border-color: var(--step-bg);
+  color: var(--step-bg);
+}
+.sp-step-progress .sp-step-item.sp-incomplete:after {
+  background-color: var(--step-bg);
+}
+.sp-step-progress .sp-step-item.sp-current .sp-step-counter {
+  background-color: var(--step-default-bg);
+  border-color: var(--step-bg);
+  color: var(--step-bg);
+}
+.sp-step-progress .sp-step-item.sp-current .sp-step-name {
+  color: var(--step-current-label);
+}
+.sp-step-progress .sp-step-item {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  gap: 14px;
+}
+.sp-step-progress .sp-step-item:before, .sp-step-progress .sp-step-item:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  top: 19px;
+  background-color: var(--step-default-separator-color);
+}
+.sp-step-progress .sp-step-item:before {
+  left: -50%;
+  z-index: 2;
+}
+.sp-step-progress .sp-step-item:after {
+  left: 50%;
+  z-index: 3;
+}
+.sp-step-progress .sp-step-item .sp-step-counter {
+  position: relative;
+  z-index: 5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 4rem;
+  background: var(--step-default-bg);
+  border: 1px solid var(--step-default-border-color);
+  color: var(--step-default-text);
+  font-weight: 600;
+  font-size: 0.813rem;
+}
+.sp-step-progress .sp-step-item .sp-step-name {
+  display: none;
+}
+.sp-step-progress .sp-step-item.sp-completed .sp-step-counter {
+  color: var(--step-completed-icon);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 0.75rem;
+}
+.sp-step-progress .sp-step-item:first-child::before {
+  display: none;
+}
+.sp-step-progress .sp-step-item:last-child::after {
+  display: none;
+}
+.sp-step-progress .sp-step-item:last-child::before {
+  display: none;
+}
+.sp-step-progress.sp-size-s .sp-step-item:before, .sp-step-progress.sp-size-s .sp-step-item:after {
+  top: 16px;
+}
+.sp-step-progress.sp-size-s .sp-step-item .sp-step-counter {
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.688rem;
+}
+.sp-step-progress.sp-size-s .sp-step-item .sp-step-name {
+  font-size: 0.688rem;
+}
+.sp-step-progress.sp-size-s .sp-step-item.sp-completed .sp-step-counter {
+  font-size: 0.688rem;
+}
+@media (min-width: 1200px) {
+  .sp-step-progress .sp-step-item {
+    width: 150px;
+  }
+  .sp-step-progress .sp-step-item .sp-step-name {
+    display: block;
+    text-align: center;
+    font-size: 0.813rem;
+  }
+}
+
+.sp-step-mobile {
+  --step-default-text: #6d7688;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.sp-step-mobile.sp-primary {
+  --step-color: #0061e8;
+}
+.sp-step-mobile.sp-secondary {
+  --step-color: #7c48e7;
+}
+.sp-step-mobile .sp-step-counter {
+  color: var(--step-default-text);
+  font-size: 0.813rem;
+  font-weight: 600;
+}
+.sp-step-mobile .sp-step-counter .sp-step-current {
+  color: var(--step-color);
+}
+.sp-step-mobile .sp-step-name {
+  color: var(--step-color);
+  font-size: 0.813rem;
+  font-weight: 600;
+}

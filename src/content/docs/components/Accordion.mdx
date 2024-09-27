@@ -1,0 +1,763 @@
+---
+title: Accordion
+tableOfContents:
+  minHeadingLevel: 2
+  maxHeadingLevel: 3
+---
+import FontAwsomeIcon from '../../../components/ui/FontAwsomeIcon.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import Accordion from '../../../components/Accordion.astro';
+import { Image } from 'astro:assets';
+import accordionAnatomy from '../../../assets/accordion-anatomy.png';
+
+Accordions group and categorize related content in a compact and space-efficient manner. They can have multiple levels of nested content, helping users navigate through complex information in a structured manner.
+
+## Anatomy
+<Image src={accordionAnatomy} alt="Accordion anatomy diagram" class="rounded-corners border" loading="eager"  />
+1. **Header**: contains the section title and is control for revealing the panel.
+2. **Panel**: the section of content associated with an accordion header.
+3. **Icons and buttons** (optional): provide additional functionality to the accordion.
+4. **Arrow**: indicates if the panel is open or closed.
+
+## When to use 
+
+- To organize related information.
+- To shorten pages and reduce scrolling when content is not crucial to read in full.
+- When space is at a premium and long content cannot be displayed all at once, like on a mobile interface or in a side panel.
+
+## When not to use 
+
+- When organizing large amounts of information that can be nested.
+- If a user is likely to read all of the content, then don't use an accordion as it adds the burden of an extra click.
+
+## Examples
+
+Click the accordions below to expand/collapse the accordion content.
+
+To render an accordion that's expanded by default:
+
+- add the `.show` class on the `.sp-accordion-collapse` element.
+- drop the `.collapsed` class from the `.sp-accordion-button` element and set its `aria-expanded` attribute to true.
+
+### Accordion with left arrow
+<Tabs>
+  <TabItem label="Preview" icon="laptop">
+    <Accordion>
+    <div class="sp-accordion" id="accordionExample">
+  <div class="sp-accordion-item">
+    <h2 class="sp-accordion-header">
+      <div
+        class="sp-accordion-button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseOne"
+        aria-expanded="true"
+        aria-controls="collapseOne"
+      >
+        <div class="sp-accordion-header-left">
+          <span>Accordion Item #1</span>
+        </div>
+
+        <div class="sp-accordion-header-right"></div>
+      </div>
+    </h2>
+    <div
+      id="collapseOne"
+      class="sp-accordion-collapse collapse show"
+      data-bs-parent="#accordionExample"
+    >
+      <div class="sp-accordion-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras luctus leo
+        quis augue viverra pharetra. Duis egestas ipsum eu suscipit placerat. Ut
+        a arcu magna. Integer congue erat eget magna posuere suscipit. Quisque
+        ut quam odio. Mauris in sapien consectetur, volutpat est nec, pretium
+        mauris.
+      </div>
+    </div>
+  </div>
+  <div class="sp-accordion-item">
+    <h2 class="sp-accordion-header">
+      <div
+        class="sp-accordion-button collapsed"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseTwo"
+        aria-expanded="false"
+        aria-controls="collapseTwo"
+      >
+        <div class="sp-accordion-header-left">
+          <span>Accordion Item #2</span>
+        </div>
+
+        <div class="sp-accordion-header-right"></div>
+      </div>
+    </h2>
+    <div
+      id="collapseTwo"
+      class="sp-accordion-collapse collapse"
+      data-bs-parent="#accordionExample"
+    >
+      <div class="sp-accordion-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras luctus leo
+        quis augue viverra pharetra. Duis egestas ipsum eu suscipit placerat. Ut
+        a arcu magna. Integer congue erat eget magna posuere suscipit. Quisque
+        ut quam odio. Mauris in sapien consectetur, volutpat est nec, pretium
+        mauris.
+      </div>
+    </div>
+  </div>
+  <div class="sp-accordion-item">
+    <h2 class="sp-accordion-header">
+      <div
+        class="sp-accordion-button collapsed"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseThree"
+        aria-expanded="false"
+        aria-controls="collapseThree"
+      >
+        <div class="sp-accordion-header-left">
+          <span>Accordion Item #3</span>
+        </div>
+
+        <div class="sp-accordion-header-right"></div>
+      </div>
+    </h2>
+    <div
+      id="collapseThree"
+      class="sp-accordion-collapse collapse"
+      data-bs-parent="#accordionExample"
+    >
+      <div class="sp-accordion-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras luctus leo
+        quis augue viverra pharetra. Duis egestas ipsum eu suscipit placerat. Ut
+        a arcu magna. Integer congue erat eget magna posuere suscipit. Quisque
+        ut quam odio. Mauris in sapien consectetur, volutpat est nec, pretium
+        mauris.
+      </div>
+    </div>
+  </div>
+</div>
+</Accordion>
+
+
+  </TabItem>
+  <TabItem label="View Code" icon="seti:html">
+    ```html title="Accordion With Left Arrow"
+    <div class="sp-accordion" id="accordionExample">
+  <div class="sp-accordion-item">
+    <h2 class="sp-accordion-header">
+      <div class="sp-accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+        <div class="sp-accordion-header-left">
+          <span>Accordion Item #1</span>
+        </div>
+        <div class="sp-accordion-header-right"></div>
+      </div>
+    </h2>
+    <div id="collapseOne" class="sp-accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="sp-accordion-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras luctus leo quis augue viverra pharetra. Duis egestas ipsum eu suscipit placerat. Ut a arcu magna. 
+      </div>
+    </div>
+  </div>
+  <div class="sp-accordion-item">
+    <h2 class="sp-accordion-header">
+      <div class="sp-accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <div class="sp-accordion-header-left">
+          <span>Accordion Item #2</span>
+        </div>
+        <div class="sp-accordion-header-right"></div>
+      </div>
+    </h2>
+    <div id="collapseTwo" class="sp-accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="sp-accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras luctus leoquis augue viverra pharetra. Duis egestas ipsum eu suscipit placerat.     
+      </div>
+    </div>
+  </div>
+  <div class="sp-accordion-item">
+    <h2 class="sp-accordion-header">
+      <div class="sp-accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <div class="sp-accordion-header-left">
+          <span>Accordion Item #3</span>
+        </div>
+        <div class="sp-accordion-header-right"></div>
+      </div>
+    </h2>
+    <div id="collapseThree" class="sp-accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="sp-accordion-body"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras luctus leo  quis augue viverra pharetra. Duis egestas ipsum eu suscipit placerat. Ut a arcu magna. Integer congue erat eget magna posuere suscipit.
+      </div>
+    </div>
+  </div>
+</div>
+```
+  </TabItem>
+</Tabs>
+
+### Accordion with right arrow
+`.sp-has-right-arrow` class controls the position of the arrow. If the class is not present, the arrow on the left is the default state
+
+<Tabs>
+  <TabItem label="Preview" icon="laptop">
+  <Accordion>
+    <div class="sp-accordion sp-has-right-arrow" id="accordionExample2">
+                <div class="sp-accordion-item">
+                  <h2 class="sp-accordion-header">
+                    <div
+                      class="sp-accordion-button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne1"
+                      aria-expanded="true"
+                      aria-controls="collapseOne1"
+                    >
+                      <div class="sp-accordion-header-left">
+                        <span>Accordion Item #1</span>
+                        <span class="sp-badge sp-info">left</span>
+                      </div>
+                      <div class="sp-accordion-header-right">
+                        <span class="sp-badge sp-info">right</span>
+                      </div>
+                    </div>
+                  </h2>
+                  <div
+                    id="collapseOne1"
+                    class="sp-accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample2"
+                  >
+                    <div class="sp-accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Cras luctus leo quis augue viverra pharetra. Duis egestas
+                      ipsum eu suscipit placerat. Ut a arcu magna. Integer
+                      congue erat eget magna posuere suscipit. Quisque ut quam
+                      odio. Mauris in sapien consectetur, volutpat est nec,
+                      pretium mauris.
+                    </div>
+                  </div>
+                </div>
+                <div class="sp-accordion-item">
+                  <h2 class="sp-accordion-header">
+                    <div
+                      class="sp-accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo1"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo1"
+                    >
+                      <div class="sp-accordion-header-left">
+                        <span>Accordion Item #2</span>
+                      </div>
+
+                      <div class="sp-accordion-header-right"></div>
+                    </div>
+                  </h2>
+                  <div
+                    id="collapseTwo1"
+                    class="sp-accordion-collapse collapse"
+                    data-bs-parent="#accordionExample2"
+                  >
+                    <div class="sp-accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Cras luctus leo quis augue viverra pharetra. Duis egestas
+                      ipsum eu suscipit placerat. Ut a arcu magna. Integer
+                      congue erat eget magna posuere suscipit. Quisque ut quam
+                      odio. Mauris in sapien consectetur, volutpat est nec,
+                      pretium mauris.
+                    </div>
+                  </div>
+                </div>
+                <div class="sp-accordion-item">
+                  <h2 class="sp-accordion-header">
+                    <div
+                      class="sp-accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree1"
+                      aria-expanded="false"
+                      aria-controls="collapseThree1"
+                    >
+                      <div class="sp-accordion-header-left">
+                        <span>Accordion Item #3</span>
+                      </div>
+
+                      <div class="sp-accordion-header-right"></div>
+                    </div>
+                  </h2>
+                  <div
+                    id="collapseThree1"
+                    class="sp-accordion-collapse collapse"
+                    data-bs-parent="#accordionExample2"
+                  >
+                    <div class="sp-accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Cras luctus leo quis augue viverra pharetra. Duis egestas
+                      ipsum eu suscipit placerat. Ut a arcu magna. Integer
+                      congue erat eget magna posuere suscipit. Quisque ut quam
+                      odio. Mauris in sapien consectetur, volutpat est nec,
+                      pretium mauris.
+                    </div>
+                  </div>
+                </div>
+              </div>
+  </Accordion>
+  </TabItem>
+  <TabItem label="View Code" icon="seti:html">
+  ```html title="Accordion With Right Arrow"
+ <div class="sp-accordion sp-has-right-arrow" id="accordionExample2">
+  <div class="sp-accordion-item">
+    <h2 class="sp-accordion-header">
+      <div class="sp-accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true"
+        aria-controls="collapseOne1">
+        <div class="sp-accordion-header-left">
+          <span>Accordion Item #1</span>
+          <span class="sp-badge sp-info">left</span>
+        </div>
+        <div class="sp-accordion-header-right">
+          <span class="sp-badge sp-info">right</span>
+        </div>
+      </div>
+    </h2>
+    <div id="collapseOne1" class="sp-accordion-collapse collapse show" data-bs-parent="#accordionExample2">
+      <div class="sp-accordion-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras luctus leo
+        quis augue viverra pharetra. Duis egestas ipsum eu suscipit placerat. Ut
+        a arcu magna. Integer congue erat eget magna posuere suscipit. Quisque
+        ut quam odio. Mauris in sapien consectetur, volutpat est nec, pretium
+        mauris.
+      </div>
+    </div>
+  </div>
+  <div class="sp-accordion-item">
+    <h2 class="sp-accordion-header">
+      <div class="sp-accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo1"
+        aria-expanded="false" aria-controls="collapseTwo1">
+        <div class="sp-accordion-header-left">
+          <span>Accordion Item #2</span>
+        </div>
+        <div class="sp-accordion-header-right"></div>
+      </div>
+    </h2>
+    <div id="collapseTwo1" class="sp-accordion-collapse collapse" data-bs-parent="#accordionExample2">
+      <div class="sp-accordion-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras luctus leo
+        quis augue viverra pharetra. Duis egestas ipsum eu suscipit placerat. Ut
+        a arcu magna. Integer congue erat eget magna posuere suscipit. Quisque
+        ut quam odio. Mauris in sapien consectetur, volutpat est nec, pretium
+        mauris.
+      </div>
+    </div>
+  </div>
+  <div class="sp-accordion-item">
+    <h2 class="sp-accordion-header">
+      <div class="sp-accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree1"
+        aria-expanded="false" aria-controls="collapseThree1">
+        <div class="sp-accordion-header-left">
+          <span>Accordion Item #3</span>
+        </div>
+        <div class="sp-accordion-header-right"></div>
+      </div>
+    </h2>
+    <div id="collapseThree1" class="sp-accordion-collapse collapse" data-bs-parent="#accordionExample2">
+      <div class="sp-accordion-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras luctus leo
+        quis augue viverra pharetra. Duis egestas ipsum eu suscipit placerat. Ut
+        a arcu magna. Integer congue erat eget magna posuere suscipit. Quisque
+        ut quam odio. Mauris in sapien consectetur, volutpat est nec, pretium
+        mauris.
+      </div>
+    </div>
+  </div>
+</div>
+  ```
+</TabItem>
+</Tabs>
+
+### With icons, badges, buttons
+<Tabs>
+  <TabItem label="Preview" icon="laptop">
+    <Accordion>
+      <div class="sp-accordion" id="accordionExample0">
+        <div class="sp-accordion-item">
+          <h2 class="sp-accordion-header d-flex align-items-center">
+            <div class="sp-accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne0"
+              aria-expanded="true" aria-controls="collapseOne0">
+              <div class="sp-accordion-header-left">
+                <span>Accordion Item #1</span>
+
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+
+              <div class="sp-accordion-header-right"></div>
+            </div>
+          </h2>
+          <div id="collapseOne0" class="sp-accordion-collapse collapse" data-bs-parent="#accordionExample0">
+            <div class="sp-accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Cras luctus leo quis augue viverra pharetra. Duis egestas
+              ipsum eu suscipit placerat. Ut a arcu magna. Integer
+              congue erat eget magna posuere suscipit. Quisque ut quam
+              odio. Mauris in sapien consectetur, volutpat est nec,
+              pretium mauris.
+            </div>
+          </div>
+        </div>
+        <div class="sp-accordion-item">
+          <h2 class="sp-accordion-header">
+            <div class="sp-accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo0"
+              aria-expanded="false" aria-controls="collapseTwo0">
+              <div class="sp-accordion-header-left">
+                <span>Accordion Item #1</span>
+                <span class="sp-badge sp-info">left</span>
+              </div>
+              <div class="sp-accordion-header-right">
+                <span class="sp-badge sp-info">right</span>
+              </div>
+            </div>
+          </h2>
+          <div id="collapseTwo0" class="sp-accordion-collapse collapse" data-bs-parent="#accordionExample0">
+            <div class="sp-accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Cras luctus leo quis augue viverra pharetra. Duis egestas
+              ipsum eu suscipit placerat. Ut a arcu magna. Integer
+              congue erat eget magna posuere suscipit. Quisque ut quam
+              odio. Mauris in sapien consectetur, volutpat est nec,
+              pretium mauris.
+            </div>
+          </div>
+        </div>
+        <div class="sp-accordion-item">
+          <h2 class="sp-accordion-header">
+            <div class="sp-accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree0"
+              aria-expanded="false" aria-controls="collapseThree0">
+              <div class="sp-accordion-header-left">
+                <span>Accordion Item #3</span>
+              </div>
+
+              <div class="sp-accordion-header-right">
+                <button class="sp-btn sp-btn-outline sp-btn-primary sp-btn-s">
+                  Button
+                </button>
+                <i class="fa-regular fa-pencil"></i>
+              </div>
+            </div>
+          </h2>
+          <div id="collapseThree0" class="sp-accordion-collapse collapse" data-bs-parent="#accordionExample0">
+            <div class="sp-accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Cras luctus leo quis augue viverra pharetra. Duis egestas
+              ipsum eu suscipit placerat. Ut a arcu magna. Integer
+              congue erat eget magna posuere suscipit. Quisque ut quam
+              odio. Mauris in sapien consectetur, volutpat est nec,
+              pretium mauris.
+            </div>
+          </div>
+        </div>
+      </div>
+    </Accordion>
+  </TabItem >
+  <TabItem label="View Code" icon="seti:html">
+   ``` html title="Accordion With Icons, Badges, Buttons"
+    <div class="sp-accordion" id="accordionExample0">
+      <div class="sp-accordion-item">
+        <h2 class="sp-accordion-header d-flex align-items-center">
+          <div class="sp-accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne0"
+            aria-expanded="true" aria-controls="collapseOne0">
+            <div class="sp-accordion-header-left">
+              <span>Accordion Item #1</span>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="sp-accordion-header-right"></div>
+          </div>
+        </h2>
+        <div id="collapseOne0" class="sp-accordion-collapse collapse" data-bs-parent="#accordionExample0">
+          <div class="sp-accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Cras luctus leo quis augue viverra pharetra. Duis egestas
+            ipsum eu suscipit placerat. Ut a arcu magna. Integer
+            congue erat eget magna posuere suscipit. Quisque ut quam
+            odio. Mauris in sapien consectetur, volutpat est nec,
+            pretium mauris.
+          </div>
+        </div>
+      </div>
+      <div class="sp-accordion-item">
+        <h2 class="sp-accordion-header">
+          <div class="sp-accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo0"
+            aria-expanded="false" aria-controls="collapseTwo0">
+            <div class="sp-accordion-header-left">
+              <span>Accordion Item #1</span>
+              <span class="sp-badge sp-info">left</span>
+            </div>
+            <div class="sp-accordion-header-right">
+              <span class="sp-badge sp-info">right</span>
+            </div>
+          </div>
+        </h2>
+        <div id="collapseTwo0" class="sp-accordion-collapse collapse" data-bs-parent="#accordionExample0">
+          <div class="sp-accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Cras luctus leo quis augue viverra pharetra. Duis egestas
+            ipsum eu suscipit placerat. Ut a arcu magna. Integer
+            congue erat eget magna posuere suscipit. Quisque ut quam
+            odio. Mauris in sapien consectetur, volutpat est nec,
+            pretium mauris.
+          </div>
+        </div>
+      </div>
+      <div class="sp-accordion-item">
+        <h2 class="sp-accordion-header">
+          <div class="sp-accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree0"
+            aria-expanded="false" aria-controls="collapseThree0">
+            <div class="sp-accordion-header-left">
+              <span>Accordion Item #3</span>
+            </div>
+            <div class="sp-accordion-header-right">
+              <button class="sp-btn sp-btn-outline sp-btn-primary sp-btn-s">
+                Button
+              </button>
+              <i class="fa-regular fa-pencil"></i>
+            </div>
+          </div>
+        </h2>
+        <div id="collapseThree0" class="sp-accordion-collapse collapse" data-bs-parent="#accordionExample0">
+          <div class="sp-accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Cras luctus leo quis augue viverra pharetra. Duis egestas
+            ipsum eu suscipit placerat. Ut a arcu magna. Integer
+            congue erat eget magna posuere suscipit. Quisque ut quam
+            odio. Mauris in sapien consectetur, volutpat est nec,
+            pretium mauris.
+          </div>
+        </div>
+      </div>
+    </div>
+   ```
+  </TabItem >
+</Tabs>
+
+### Nested Accordions
+
+<Tabs>
+  <TabItem label="Preview" icon="laptop">
+    <Accordion>
+      <div class="sp-accordion sp-has-right-arrow" id="accordionExample22">
+        <div class="sp-accordion-item">
+          <h2 class="sp-accordion-header">
+            <div class="sp-accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne12" aria-expanded="true"
+              aria-controls="collapseOne12">
+              <div class="sp-accordion-header-left">
+                <span>Accordion Item #1</span>
+              </div>
+              <div class="sp-accordion-header-right">
+                <i class="fa-regular fa-pencil"></i>
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+            </div>
+          </h2>
+          <div id="collapseOne12" class="sp-accordion-collapse collapse show" data-bs-parent="#accordionExample22">
+            <div class="sp-accordion-body">
+              <div class="sp-accordion sp-has-right-arrow" id="sub-accordionExample">
+                <div class="sp-accordion-item">
+                  <h2 class="sp-accordion-header" id="sub-headingOne">
+                    <div class="sp-accordion-button" data-bs-toggle="collapse" data-bs-target="#sub-collapseOne"
+                      aria-expanded="true" aria-controls="collapseOne">
+                      <span>Accordion 1 Subitem 1</span>
+                      <div class="sp-accordion-header-right"></div>
+                    </div>
+                  </h2>
+                  <div id="sub-collapseOne" class="sp-accordion-collapse collapse show" aria-labelledby="sub-headingOne"
+                    data-bs-parent="#sub-accordionExample">
+                    <div class="sp-accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit. Cras luctus leo quis augue viverra pharetra.
+                      Duis egestas ipsum eu suscipit placerat. Ut a arcu
+                      magna. Integer congue erat eget magna posuere
+                      suscipit. Quisque ut quam odio. Mauris in sapien
+                      consectetur, volutpat est nec, pretium mauris.
+                    </div>
+                  </div>
+                </div>
+                <div class="sp-accordion-item">
+                  <h2 class="sp-accordion-header" id="sub-headingTwo">
+                    <div class="sp-accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sub-collapseTwo"
+                      aria-expanded="false" aria-controls="sub-collapseTwo">
+                      <span>Accordion 1 Subitem 2</span>
+                      <div class="sp-accordion-header-right"></div>
+                    </div>
+                  </h2>
+                  <div id="sub-collapseTwo" class="sp-accordion-collapse collapse" aria-labelledby="sub-headingTwo"
+                    data-bs-parent="#sub-accordionExample">
+                    <div class="sp-accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit. Cras luctus leo quis augue viverra pharetra.
+                      Duis egestas ipsum eu suscipit placerat. Ut a arcu
+                      magna. Integer congue erat eget magna posuere
+                      suscipit. Quisque ut quam odio. Mauris in sapien
+                      consectetur, volutpat est nec, pretium mauris.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sp-accordion-item">
+          <h2 class="sp-accordion-header">
+            <div class="sp-accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo11"
+              aria-expanded="false" aria-controls="collapseTwo11">
+              <div class="sp-accordion-header-left">
+                <span>Accordion Item #2</span>
+              </div>
+              <div class="sp-accordion-header-right">
+                <span class="sp-badge sp-info">Badge</span>
+              </div>
+            </div>
+          </h2>
+          <div id="collapseTwo11" class="sp-accordion-collapse collapse" data-bs-parent="#accordionExample22">
+            <div class="sp-accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Cras luctus leo quis augue viverra pharetra. Duis egestas
+              ipsum eu suscipit placerat. Ut a arcu magna. Integer
+              congue erat eget magna posuere suscipit. Quisque ut quam
+              odio. Mauris in sapien consectetur, volutpat est nec,
+              pretium mauris.
+            </div>
+          </div>
+        </div>
+        <div class="sp-accordion-item">
+          <h2 class="sp-accordion-header">
+            <div class="sp-accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree11"
+              aria-expanded="false" aria-controls="collapseThree11">
+              <div class="sp-accordion-header-left">
+                <span>Accordion Item #3</span>
+              </div>
+              <div class="sp-accordion-header-right">
+                <button class="sp-btn sp-btn-outline sp-btn-primary sp-btn-s">
+                  Button
+                </button>
+              </div>
+            </div>
+          </h2>
+          <div id="collapseThree11" class="sp-accordion-collapse collapse" data-bs-parent="#accordionExample22">
+            <div class="sp-accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Cras luctus leo quis augue viverra pharetra. Duis egestas
+              ipsum eu suscipit placerat. Ut a arcu magna. Integer
+              congue erat eget magna posuere suscipit. Quisque ut quam
+              odio. Mauris in sapien consectetur, volutpat est nec,
+              pretium mauris.
+            </div>
+          </div>
+        </div>
+      </div>
+    </Accordion>
+  </TabItem>
+  <TabItem label="View Code" icon="seti:html">
+    ``` html title="Nested Accordions"
+    <div class="sp-accordion sp-has-right-arrow" id="accordionExample22">
+      <div class="sp-accordion-item">
+        <h2 class="sp-accordion-header">
+          <div class="sp-accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne12" aria-expanded="true"
+            aria-controls="collapseOne12">
+            <div class="sp-accordion-header-left">
+              <span>Accordion Item #1</span>
+            </div>
+            <div class="sp-accordion-header-right">
+              <i class="fa-regular fa-pencil"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+          </div>
+        </h2>
+        <div id="collapseOne12" class="sp-accordion-collapse collapse show" data-bs-parent="#accordionExample22">
+          <div class="sp-accordion-body">
+            <div class="sp-accordion sp-has-right-arrow" id="sub-accordionExample">
+              <div class="sp-accordion-item">
+                <h2 class="sp-accordion-header" id="sub-headingOne">
+                  <div class="sp-accordion-button" data-bs-toggle="collapse" data-bs-target="#sub-collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <span>Accordion 1 Subitem 1</span>
+                    <div class="sp-accordion-header-right"></div>
+                  </div>
+                </h2>
+                <div id="sub-collapseOne" class="sp-accordion-collapse collapse show" aria-labelledby="sub-headingOne"
+                  data-bs-parent="#sub-accordionExample">
+                  <div class="sp-accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Cras luctus leo quis augue viverra pharetra.
+                    Duis egestas ipsum eu suscipit placerat. Ut a arcu
+                    magna. Integer congue erat eget magna posuere
+                    suscipit. Quisque ut quam odio. Mauris in sapien
+                    consectetur, volutpat est nec, pretium mauris.
+                  </div>
+                </div>
+              </div>
+              <div class="sp-accordion-item">
+                <h2 class="sp-accordion-header" id="sub-headingTwo">
+                  <div class="sp-accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sub-collapseTwo"
+                    aria-expanded="false" aria-controls="sub-collapseTwo">
+                    <span>Accordion 1 Subitem 2</span>
+                    <div class="sp-accordion-header-right"></div>
+                  </div>
+                </h2>
+                <div id="sub-collapseTwo" class="sp-accordion-collapse collapse" aria-labelledby="sub-headingTwo"
+                  data-bs-parent="#sub-accordionExample">
+                  <div class="sp-accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Cras luctus leo quis augue viverra pharetra.
+                    Duis egestas ipsum eu suscipit placerat. Ut a arcu
+                    magna. Integer congue erat eget magna posuere
+                    suscipit. Quisque ut quam odio. Mauris in sapien
+                    consectetur, volutpat est nec, pretium mauris.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sp-accordion-item">
+        <h2 class="sp-accordion-header">
+          <div class="sp-accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo11"
+            aria-expanded="false" aria-controls="collapseTwo11">
+            <div class="sp-accordion-header-left">
+              <span>Accordion Item #2</span>
+            </div>
+            <div class="sp-accordion-header-right">
+              <span class="sp-badge sp-info">Badge</span>
+            </div>
+          </div>
+        </h2>
+        <div id="collapseTwo11" class="sp-accordion-collapse collapse" data-bs-parent="#accordionExample22">
+          <div class="sp-accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Cras luctus leo quis augue viverra pharetra. Duis egestas
+            ipsum eu suscipit placerat. Ut a arcu magna. Integer
+            congue erat eget magna posuere suscipit. Quisque ut quam
+            odio. Mauris in sapien consectetur, volutpat est nec,
+            pretium mauris.
+          </div>
+        </div>
+      </div>
+      <div class="sp-accordion-item">
+        <h2 class="sp-accordion-header">
+          <div class="sp-accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree11"
+            aria-expanded="false" aria-controls="collapseThree11">
+            <div class="sp-accordion-header-left">
+              <span>Accordion Item #3</span>
+            </div>
+            <div class="sp-accordion-header-right">
+              <button class="sp-btn sp-btn-outline sp-btn-primary sp-btn-s">
+                Button
+              </button>
+            </div>
+          </div>
+        </h2>
+        <div id="collapseThree11" class="sp-accordion-collapse collapse" data-bs-parent="#accordionExample22">
+          <div class="sp-accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Cras luctus leo quis augue viverra pharetra. Duis egestas
+            ipsum eu suscipit placerat. Ut a arcu magna. Integer
+            congue erat eget magna posuere suscipit. Quisque ut quam
+            odio. Mauris in sapien consectetur, volutpat est nec,
+            pretium mauris.
+          </div>
+        </div>
+      </div>
+    </div>
+    ```
+  </TabItem>
+</Tabs> 

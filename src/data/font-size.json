@@ -1,0 +1,47 @@
+[
+  {
+    "name": "$font-size-xs",
+    "value": "0.688rem",
+    "compiledValue": "0.688rem"
+  },
+  {
+    "name": "$font-size-s",
+    "value": "0.813rem",
+    "compiledValue": "0.813rem"
+  },
+  {
+    "name": "$font-size-m",
+    "value": "1rem",
+    "compiledValue": "1rem"
+  },
+  {
+    "name": "$font-size-l",
+    "value": "1.188rem",
+    "compiledValue": "1.188rem"
+  },
+  {
+    "name": "$font-size-xl",
+    "value": "1.438rem",
+    "compiledValue": "1.438rem"
+  },
+  {
+    "name": "$font-size-2xl",
+    "value": "1.75rem",
+    "compiledValue": "1.75rem"
+  },
+  {
+    "name": "$font-size-3xl",
+    "value": "2rem",
+    "compiledValue": "2rem"
+  },
+  {
+    "name": "$font-size-4xl",
+    "value": "2.25rem",
+    "compiledValue": "2.25rem"
+  },
+  {
+    "name": "$font-size-5xl",
+    "value": "2.5rem",
+    "compiledValue": "2.5rem"
+  }
+]

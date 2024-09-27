@@ -1,0 +1,159 @@
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/styles/alerts/alerts.scss ***!
+  \**************************************************************************************************************************************************************************************************************************/
+/*#region color-primary*/
+/*#endregion*/
+/*#region color-secondary*/
+/*#endregion*/
+/*#region color-accent*/
+/*#endregion*/
+/*#region color-neutral*/
+/*#endregion*/
+/*#region color-error*/
+/*#endregion*/
+/*#region color-success*/
+/*#endregion*/
+/*#region color-warning*/
+/*#endregion*/
+/*#region color-info*/
+/*#endregion*/
+/*#region color-utility*/
+/*#endregion*/
+/*#region radius*/
+/*#endregion*/
+/*#region spacing*/
+/*#endregion*/
+/*#region border-width*/
+/*#endregion*/
+/*#region Typography*/
+/*#region font-size*/
+/*#endregion*/
+/*#region font-weight*/
+/*#endregion*/
+/*#region line-height*/
+/*#endregion*/
+/*#endregion*/
+/*#region shadow*/
+/*#endregion*/
+/*#region size*/
+/*#endregion*/
+/*#region color-base*/
+/*#endregion*/
+/*#region color-special*/
+/*#endregion*/
+/*#region sp-panel*/
+/*#endregion*/
+/*#region alert/modal icons*/
+/*#endregion*/
+.sp-alert {
+  --alert-bg: #ffffff;
+  --alert-text: #11152a;
+  --alert-title: #11152a;
+  --alert-btn-close: #4c5469;
+  --alert-border: #cfd5e1;
+  border-radius: 0.5rem;
+  background-color: var(--alert-bg);
+  color: var(--alert-text);
+  -webkit-box-shadow: var(--alert-shadow);
+          box-shadow: var(--alert-shadow);
+  border: 1px solid var(--alert-border);
+  border-top: 0.5rem solid var(--alert-thick-border);
+  padding: 1.5rem;
+  padding-top: 1.5rem;
+}
+.sp-alert.sp-alert-info {
+  --alert-thick-border: #30cbfc;
+  --alert-shadow: 0px 0px 5px 1px rgba(46, 203, 252, 0.2);
+  --alert-icon: url(../assets/icon-info.svg) no-repeat 0 0;
+}
+.sp-alert.sp-alert-error {
+  --alert-thick-border: #fc3092;
+  --alert-shadow: 0px 0px 5px 1px rgba(252, 48, 146, 0.2);
+  --alert-icon: url(../assets/icon-error.svg) no-repeat 0 0;
+}
+.sp-alert.sp-alert-warning {
+  --alert-thick-border: #f6cf02;
+  --alert-shadow: 0px 0px 5px 1px rgba(246, 207, 2, 0.2);
+  --alert-icon: url(../assets/icon-warning.svg) no-repeat 0 0;
+}
+.sp-alert.sp-alert-success {
+  --alert-thick-border: #1cdaa1;
+  --alert-shadow: 0px 0px 5px 1px rgba(28, 218, 161, 0.2);
+  --alert-icon: url(../assets/icon-success.svg) no-repeat 0 0;
+}
+.sp-alert .sp-alert-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+.sp-alert .sp-alert-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  gap: 1.5rem;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.sp-alert .sp-alert-header .sp-alert-title {
+  color: var(--alert-title);
+  margin-right: auto;
+  padding-left: 3.5rem;
+  font-size: 1.438rem;
+  font-weight: 600;
+}
+.sp-alert .sp-alert-icon {
+  position: absolute;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  background: var(--alert-icon);
+}
+.sp-alert .sp-alert-body {
+  font-size: 1rem;
+}
+@media (min-width: 576px) {
+  .sp-alert .sp-alert-body {
+    padding-left: 3.5rem;
+  }
+}
+.sp-alert .sp-alert-footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 1.5rem;
+}
+@media (max-width: 576px) {
+  .sp-alert .sp-alert-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .sp-alert .sp-alert-footer > * {
+    width: 100%;
+  }
+}
+.sp-alert.sp-alert-toast {
+  max-width: 440px;
+  margin-left: 1.5rem;
+}

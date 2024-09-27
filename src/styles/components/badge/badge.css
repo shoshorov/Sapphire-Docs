@@ -1,0 +1,103 @@
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/styles/badge/badge.scss ***!
+  \************************************************************************************************************************************************************************************************************************/
+/*#region color-primary*/
+/*#endregion*/
+/*#region color-secondary*/
+/*#endregion*/
+/*#region color-accent*/
+/*#endregion*/
+/*#region color-neutral*/
+/*#endregion*/
+/*#region color-error*/
+/*#endregion*/
+/*#region color-success*/
+/*#endregion*/
+/*#region color-warning*/
+/*#endregion*/
+/*#region color-info*/
+/*#endregion*/
+/*#region color-utility*/
+/*#endregion*/
+/*#region radius*/
+/*#endregion*/
+/*#region spacing*/
+/*#endregion*/
+/*#region border-width*/
+/*#endregion*/
+/*#region Typography*/
+/*#region font-size*/
+/*#endregion*/
+/*#region font-weight*/
+/*#endregion*/
+/*#region line-height*/
+/*#endregion*/
+/*#endregion*/
+/*#region shadow*/
+/*#endregion*/
+/*#region size*/
+/*#endregion*/
+/*#region color-base*/
+/*#endregion*/
+/*#region color-special*/
+/*#endregion*/
+/*#region sp-panel*/
+/*#endregion*/
+/*#region alert/modal icons*/
+/*#endregion*/
+.sp-badge {
+  --badge-text: #11152a;
+  --badge-bg: #e2e7f0;
+  --badge-bg-outline: #ffffff;
+  --badge-outline: #cfd5e1;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.813rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.5rem;
+  color: var(--badge-text);
+  background-color: var(--badge-bg);
+}
+.sp-badge.sp-size-s {
+  font-size: 0.688rem;
+}
+.sp-badge.sp-indicator {
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.sp-badge.sp-indicator.sp-size-s {
+  width: 8px;
+  height: 8px;
+}
+.sp-badge.sp-indicator.sp-size-xs {
+  width: 6px;
+  height: 6px;
+}
+.sp-badge.sp-success {
+  --badge-bg: #83f5d3;
+  --badge-outline: #83f5d3;
+}
+.sp-badge.sp-danger {
+  --badge-bg: #ff8cc3;
+  --badge-outline: #ff8cc3;
+}
+.sp-badge.sp-warning {
+  --badge-bg: #fcde72;
+  --badge-outline: #fcde72;
+}
+.sp-badge.sp-info {
+  --badge-bg: #73ddff;
+  --badge-outline: #73ddff;
+}
+.sp-badge.sp-outline {
+  background-color: var(--badge-bg-outline);
+  -webkit-box-shadow: 0 0 0 1px inset var(--badge-outline);
+          box-shadow: 0 0 0 1px inset var(--badge-outline);
+}

@@ -1,0 +1,180 @@
+---
+title: Avatar
+---
+import { Image } from 'astro:assets';
+
+Avatar is used for showing a thumbnail representation of a single user or entity. Default avatar illustration is displayed when no src is specified.
+
+## Initials
+<div class="not-content d-flex align-items-center sp-gap-s">
+    <div class="sp-avatar sp-avatar-l d-flex justify-content-center align-items-center" alt="Avatar">WB</div>
+    <div class="sp-avatar sp-avatar-m d-flex justify-content-center align-items-center" alt="Avatar">WB</div>
+    <div class="sp-avatar sp-avatar-xs d-flex justify-content-center align-items-center" alt="Avatar">WB</div>
+    <div class="sp-avatar sp-avatar-m sp-special-color-7 d-flex justify-content-center align-items-center" alt="Avatar">WB</div>
+    <div class="sp-avatar sp-avatar-xs sp-special-color-7 d-flex justify-content-center align-items-center" alt="Avatar">WB</div>
+    <div class="sp-avatar sp-avatar-m sp-special-color-5 d-flex justify-content-center align-items-center" alt="Avatar">WB</div>
+    <div class="sp-avatar sp-avatar-xs sp-special-color-5 d-flex justify-content-center align-items-center" alt="Avatar">WB</div>
+    <div class="sp-avatar sp-avatar-l d-flex justify-content-center align-items-center" alt="Avatar">MEW</div>
+    <div class="sp-avatar sp-avatar-m d-flex justify-content-center align-items-center" alt="Avatar">MEW</div>
+    <div class="sp-avatar sp-avatar-xs d-flex justify-content-center align-items-center" alt="Avatar">MEW</div>
+</div>
+```html
+    <div class="sp-avatar sp-avatar-l d-flex justify-content-center align-items-center" alt="Avatar">WB</div>
+    <div class="sp-avatar sp-avatar-m d-flex justify-content-center align-items-center" alt="Avatar">WB</div>
+    <div class="sp-avatar sp-avatar-xs d-flex justify-content-center align-items-center" alt="Avatar">WB</div>
+    <div class="sp-avatar sp-avatar-m sp-special-color-7 d-flex justify-content-center align-items-center" alt="Avatar">WB</div>
+    <div class="sp-avatar sp-avatar-xs sp-special-color-7 d-flex justify-content-center align-items-center" alt="Avatar">WB</div>
+    <div class="sp-avatar sp-avatar-m sp-special-color-5 d-flex justify-content-center align-items-center" alt="Avatar">WB</div>
+    <div class="sp-avatar sp-avatar-xs sp-special-color-5 d-flex justify-content-center align-items-center" alt="Avatar">WB</div>
+    <div class="sp-avatar sp-avatar-l d-flex justify-content-center align-items-center" alt="Avatar">MEW</div>
+    <div class="sp-avatar sp-avatar-m d-flex justify-content-center align-items-center" alt="Avatar">MEW</div>
+    <div class="sp-avatar sp-avatar-xs d-flex justify-content-center align-items-center" alt="Avatar">MEW</div>
+```
+## With Image
+<Image src="https://i.pravatar.cc/150/}" width="150px" height="150px" alt="Avatar" class="sp-avatar sp-avatar-m" loading="eager" />
+
+```html
+<img class="sp-avatar sp-avatar-m" src="URL_TO_IMAGE"/>
+```
+
+## With Icons
+<div class="not-content d-flex align-items-center sp-gap-s">
+    <div class="sp-avatar sp-avatar-m sp-special-color-2 d-flex justify-content-center align-items-center ">
+        <i class="fa-regular fa-user"></i>
+    </div>
+    <div class="sp-avatar sp-avatar-m sp-special-color-2 d-flex justify-content-center align-items-center">
+        <i class="fa-light fa-users"></i>
+    </div>
+</div>
+```html
+    <div class="sp-avatar sp-avatar-m sp-special-color-2 d-flex justify-content-center align-items-center ">
+        <i class="fa-regular fa-user"></i>
+    </div>
+    <div class="sp-avatar sp-avatar-m sp-special-color-2 d-flex justify-content-center align-items-center">
+        <i class="fa-light fa-users"></i>
+    </div>
+```
+
+## Avatar Group
+Avatar group is used to display multiple avatars in a compact way. To group avatars, use the `.sp-avatar-group` and sizing classes `sp-size-{xs, s, m, l}` on wrapping element and add avatars with the `.sp-avatar` class.
+<div class="not-content d-flex align-items-center sp-gap-s">
+    <div class="sp-avatar-group sp-size-l">
+    <div class="sp-avatar sp-avatar-l sp-special-color-3 d-flex justify-content-center align-items-center">
+        OW
+    </div>
+    <div class="sp-avatar sp-avatar-l sp-special-color-7 d-flex justify-content-center align-items-center">
+        OW
+    </div>
+    </div>
+
+    <div class="sp-avatar-group sp-size-m">
+    <div class="sp-avatar sp-avatar-m sp-special-color-3 d-flex justify-content-center align-items-center">
+        OW
+    </div>
+    <div class="sp-avatar sp-avatar-m sp-special-color-7 d-flex justify-content-center align-items-center">
+        OW
+    </div>
+    </div>
+
+    <div class="sp-avatar-group sp-size-xs">
+    <div class="sp-avatar sp-avatar-xs sp-special-color-3 d-flex justify-content-center align-items-center">
+        OW
+    </div>
+    <div class="sp-avatar sp-avatar-xs sp-special-color-7 d-flex justify-content-center align-items-center">
+        OW
+    </div>
+    </div>
+</div>
+```html
+    <div class="sp-avatar-group sp-size-l">
+    <div class="sp-avatar sp-avatar-l sp-special-color-3 d-flex justify-content-center align-items-center">
+        OW
+    </div>
+    <div class="sp-avatar sp-avatar-l sp-special-color-7 d-flex justify-content-center align-items-center">
+        OW
+    </div>
+    </div>
+
+    <div class="sp-avatar-group sp-size-m">
+    <div class="sp-avatar sp-avatar-m sp-special-color-3 d-flex justify-content-center align-items-center">
+        OW
+    </div>
+    <div class="sp-avatar sp-avatar-m sp-special-color-7 d-flex justify-content-center align-items-center">
+        OW
+    </div>
+    </div>
+
+    <div class="sp-avatar-group sp-size-xs">
+    <div class="sp-avatar sp-avatar-xs sp-special-color-3 d-flex justify-content-center align-items-center">
+        OW
+    </div>
+    <div class="sp-avatar sp-avatar-xs sp-special-color-7 d-flex justify-content-center align-items-center">
+        OW
+    </div>
+    </div>
+```
+## Avatar Stack
+Avatar stack is used to display multiple avatars in a compact way. To stack avatars, use the `.sp-avatar-stack` classes `sp-size-{xs, s, m, l}` on wrapping element and add avatars with the `.sp-avatar` class.
+<div class="not-content d-flex align-items-center sp-gap-s">
+<div class="sp-avatar-stack sp-size-l">
+  <div class="sp-avatar sp-avatar-l sp-special-color-7 d-flex justify-content-center align-items-center" alt="Avatar">
+  </div>
+  <div class="sp-avatar sp-avatar-l sp-special-color-5 d-flex justify-content-center align-items-center" alt="Avatar">
+  </div>
+  <div class="sp-avatar sp-avatar-l d-flex justify-content-center align-items-center" alt="Avatar">
+    +25
+  </div>
+</div>
+
+<div class="sp-avatar-stack sp-size-m">
+  <div class="sp-avatar sp-avatar-m sp-special-color-7 d-flex justify-content-center align-items-center" alt="Avatar">
+  </div>
+  <div class="sp-avatar sp-avatar-m sp-special-color-5 d-flex justify-content-center align-items-center" alt="Avatar">
+  </div>
+  <div class="sp-avatar sp-avatar-m d-flex justify-content-center align-items-center" alt="Avatar">
+    +25
+  </div>
+</div>
+
+<div class="sp-avatar-stack sp-size-xs">
+  <div class="sp-avatar sp-avatar-xs sp-special-color-7 d-flex justify-content-center align-items-center" alt="Avatar">
+  </div>
+  <div class="sp-avatar sp-avatar-xs sp-special-color-5 d-flex justify-content-center align-items-center" alt="Avatar">
+  </div>
+  <div class="sp-avatar sp-avatar-xs d-flex justify-content-center align-items-center" alt="Avatar">
+    +25
+  </div>
+</div>
+</div>
+
+```html
+<div class="sp-avatar-stack sp-size-l">
+  <div class="sp-avatar sp-avatar-l sp-special-color-7 d-flex justify-content-center align-items-center" alt="Avatar">
+  </div>
+  <div class="sp-avatar sp-avatar-l sp-special-color-5 d-flex justify-content-center align-items-center" alt="Avatar">
+  </div>
+  <div class="sp-avatar sp-avatar-l d-flex justify-content-center align-items-center" alt="Avatar">
+    +25
+  </div>
+</div>
+
+<div class="sp-avatar-stack sp-size-m">
+  <div class="sp-avatar sp-avatar-m sp-special-color-7 d-flex justify-content-center align-items-center" alt="Avatar">
+  </div>
+  <div class="sp-avatar sp-avatar-m sp-special-color-5 d-flex justify-content-center align-items-center" alt="Avatar">
+  </div>
+  <div class="sp-avatar sp-avatar-m d-flex justify-content-center align-items-center" alt="Avatar">
+    +25
+  </div>
+</div>
+
+<div class="sp-avatar-stack sp-size-xs">
+  <div class="sp-avatar sp-avatar-xs sp-special-color-7 d-flex justify-content-center align-items-center" alt="Avatar">
+  </div>
+  <div class="sp-avatar sp-avatar-xs sp-special-color-5 d-flex justify-content-center align-items-center" alt="Avatar">
+  </div>
+  <div class="sp-avatar sp-avatar-xs d-flex justify-content-center align-items-center" alt="Avatar">
+    +25
+  </div>
+</div>
+```

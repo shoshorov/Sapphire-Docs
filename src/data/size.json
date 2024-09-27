@@ -1,0 +1,132 @@
+[
+  {
+    "name": "$size-0",
+    "value": "0rem",
+    "compiledValue": "0rem"
+  },
+  {
+    "name": "$size-xxs",
+    "value": "0.125rem",
+    "compiledValue": "0.125rem"
+  },
+  {
+    "name": "$size-xs",
+    "value": "0.25rem",
+    "compiledValue": "0.25rem"
+  },
+  {
+    "name": "$size-xs-s",
+    "value": "0.375rem",
+    "compiledValue": "0.375rem"
+  },
+  {
+    "name": "$size-s",
+    "value": "0.5rem",
+    "compiledValue": "0.5rem"
+  },
+  {
+    "name": "$size-s-s",
+    "value": "0.625rem",
+    "compiledValue": "0.625rem"
+  },
+  {
+    "name": "$size-s-m",
+    "value": "0.75rem",
+    "compiledValue": "0.75rem"
+  },
+  {
+    "name": "$size-s-l",
+    "value": "0.875rem",
+    "compiledValue": "0.875rem"
+  },
+  {
+    "name": "$size-m",
+    "value": "1rem",
+    "compiledValue": "1rem"
+  },
+  {
+    "name": "$size-m-s",
+    "value": "1.125rem",
+    "compiledValue": "1.125rem"
+  },
+  {
+    "name": "$size-m-m",
+    "value": "1.25rem",
+    "compiledValue": "1.25rem"
+  },
+  {
+    "name": "$size-m-l",
+    "value": "1.375rem",
+    "compiledValue": "1.375rem"
+  },
+  {
+    "name": "$size-l",
+    "value": "1.5rem",
+    "compiledValue": "1.5rem"
+  },
+  {
+    "name": "$size-l-s",
+    "value": "1.625rem",
+    "compiledValue": "1.625rem"
+  },
+  {
+    "name": "$size-l-m",
+    "value": "1.75rem",
+    "compiledValue": "1.75rem"
+  },
+  {
+    "name": "$size-l-l",
+    "value": "1.875rem",
+    "compiledValue": "1.875rem"
+  },
+  {
+    "name": "$size-xl",
+    "value": "2rem",
+    "compiledValue": "2rem"
+  },
+  {
+    "name": "$size-xl-s",
+    "value": "2.125rem",
+    "compiledValue": "2.125rem"
+  },
+  {
+    "name": "$size-2xl",
+    "value": "2.5rem",
+    "compiledValue": "2.5rem"
+  },
+  {
+    "name": "$size-2xl-m",
+    "value": "2.75rem",
+    "compiledValue": "2.75rem"
+  },
+  {
+    "name": "$size-3xl",
+    "value": "3rem",
+    "compiledValue": "3rem"
+  },
+  {
+    "name": "$size-4xl",
+    "value": "3.5rem",
+    "compiledValue": "3.5rem"
+  },
+  {
+    "name": "$size-5xl",
+    "value": "4rem",
+    "compiledValue": "4rem"
+  },
+  {
+    "name": "$size-6xl",
+    "value": "5rem",
+    "compiledValue": "5rem"
+  },
+  {
+    "name": "$size-7xl",
+    "value": "6rem",
+    "compiledValue": "6rem"
+  },
+  {
+    "name": "$size-7xl-s",
+    "value": "6.25rem",
+    "compiledValue": "6.25rem"
+  }
+]

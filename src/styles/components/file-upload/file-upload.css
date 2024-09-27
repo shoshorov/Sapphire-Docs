@@ -1,0 +1,377 @@
+/*!************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/styles/file-upload/file-upload.scss ***!
+  \************************************************************************************************************************************************************************************************************************************/
+/*#region color-primary*/
+/*#endregion*/
+/*#region color-secondary*/
+/*#endregion*/
+/*#region color-accent*/
+/*#endregion*/
+/*#region color-neutral*/
+/*#endregion*/
+/*#region color-error*/
+/*#endregion*/
+/*#region color-success*/
+/*#endregion*/
+/*#region color-warning*/
+/*#endregion*/
+/*#region color-info*/
+/*#endregion*/
+/*#region color-utility*/
+/*#endregion*/
+/*#region radius*/
+/*#endregion*/
+/*#region spacing*/
+/*#endregion*/
+/*#region border-width*/
+/*#endregion*/
+/*#region Typography*/
+/*#region font-size*/
+/*#endregion*/
+/*#region font-weight*/
+/*#endregion*/
+/*#region line-height*/
+/*#endregion*/
+/*#endregion*/
+/*#region shadow*/
+/*#endregion*/
+/*#region size*/
+/*#endregion*/
+/*#region color-base*/
+/*#endregion*/
+/*#region color-special*/
+/*#endregion*/
+/*#region sp-panel*/
+/*#endregion*/
+/*#region alert/modal icons*/
+/*#endregion*/
+.sp-file-upload {
+  --file-upload-border: #cfd5e1;
+  --file-upload-drop-area-border: #82adfe;
+  --file-upload-text-color: #11152a;
+  --file-upload-background-icon-border: 1px solid #6d7688;
+  --file-upload-background-icon-size: 106px;
+  --file-upload-background: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.75rem;
+  min-height: 190px;
+  color: var(--file-upload-text-color);
+  background-color: var(--file-upload-background);
+  border: 1px solid var(--file-upload-border);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.sp-file-upload .sp-drop-area {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-image: repeating-linear-gradient(-28deg, var(--file-upload-drop-area-border), var(--file-upload-drop-area-border) 8px, transparent 8px, transparent 16px, var(--file-upload-drop-area-border) 16px), repeating-linear-gradient(62deg, var(--file-upload-drop-area-border), var(--file-upload-drop-area-border) 8px, transparent 8px, transparent 16px, var(--file-upload-drop-area-border) 16px), repeating-linear-gradient(152deg, var(--file-upload-drop-area-border), var(--file-upload-drop-area-border) 8px, transparent 8px, transparent 16px, var(--file-upload-drop-area-border) 16px), repeating-linear-gradient(242deg, var(--file-upload-drop-area-border), var(--file-upload-drop-area-border) 8px, transparent 8px, transparent 16px, var(--file-upload-drop-area-border) 16px);
+  background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+}
+.sp-file-upload.sp-disabled {
+  --file-upload-drop-area-border: #9ea7b8;
+  --file-upload-text-color: #9ea7b8;
+  --file-upload-btn-background: #f1f4f9;
+  --file-upload-btn-color: #4c5469;
+  cursor: not-allowed;
+}
+.sp-file-upload.sp-disabled .sp-text {
+  color: var(--file-upload-text-color);
+}
+.sp-file-upload .sp-file-upload-icon {
+  border-radius: 50%;
+  width: var(--file-upload-background-icon-size);
+  height: var(--file-upload-background-icon-size);
+  border: var(--file-upload-background-icon-border);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sp-file-upload .sp-file-upload-icon i {
+  font-size: 2.5rem;
+}
+.sp-file-upload.sp-has-background-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: none;
+  background-image: initial;
+  background-color: var(--file-upload-background);
+}
+.sp-file-upload.sp-has-background-image.sp-inverted {
+  --file-upload-background-color: #11152a;
+}
+.sp-file-upload.sp-has-background-image.sp-size-l .sp-drop-area {
+  padding: 2rem 1rem;
+}
+.sp-file-upload.sp-has-background-image.sp-disabled {
+  opacity: 0.5;
+}
+.sp-file-upload.sp-inverted {
+  --file-upload-text-color: #ffffff;
+  --file-upload-background: #11152a;
+  --file-upload-drop-area-border: #ffffff;
+  --file-upload-btn-color: #11152a;
+}
+.sp-file-upload.sp-inverted .sp-text {
+  color: var(--file-upload-text-color);
+}
+.sp-file-upload.sp-inverted .sp-btn {
+  --btn-text: var(--file-upload-btn-color);
+  --btn-text-hover: var(--file-upload-btn-color);
+  --btn-text-active: var(--file-upload-btn-color);
+}
+.sp-file-upload.sp-inverted.sp-disabled {
+  --file-upload-background: #9ea7b8;
+  --file-upload-text-color: #f1f4f9;
+  --file-upload-btn-background: #f1f4f9;
+  --file-upload-btn-text-color: #4c5469;
+  --file-upload-drop-area-border: #ffffff;
+}
+.sp-file-upload.sp-inverted.sp-disabled .sp-text {
+  color: var(--file-upload-text-color);
+}
+.sp-file-upload.sp-vertical {
+  min-height: 140px;
+}
+.sp-file-upload.sp-vertical .sp-drop-area {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 1rem;
+}
+.sp-file-upload.sp-vertical .sp-text-before-button,
+.sp-file-upload.sp-vertical p:first-child {
+  font-size: 1.438rem;
+}
+@media (min-width: 992px) {
+  .sp-file-upload.sp-vertical .sp-text-before-button,
+  .sp-file-upload.sp-vertical p:first-child {
+    font-size: 2rem;
+  }
+}
+.sp-file-upload.sp-vertical p:last-child,
+.sp-file-upload.sp-vertical .sp-text-hint {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+.sp-file-upload.sp-has-icon {
+  --file-upload-icon-color: #6d7688;
+  --file-upload-icon-border-color: #6d7688;
+}
+.sp-file-upload.sp-has-icon .sp-drop-area:before {
+  width: 106px;
+  height: 106px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 300;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  content: "\f062";
+  color: var(--file-upload-icon-color);
+  border: 1px solid var(--file-upload-icon-border-color);
+}
+.sp-file-upload.sp-has-icon .sp-drop-area:after {
+  content: "";
+  height: 0;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  display: block;
+}
+.sp-file-upload.sp-has-icon.sp-inverted {
+  --file-upload-icon-color: #ffffff;
+  --file-upload-icon-border-color: #ffffff;
+}
+.sp-file-upload.sp-has-icon.sp-inverted .sp-drop-area:before {
+  color: var(--file-upload-icon-color);
+  border-color: var(--file-upload-icon-border-color);
+}
+.sp-file-upload.sp-has-icon.sp-icon-before-title .sp-drop-area:before {
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+}
+.sp-file-upload.sp-has-icon.sp-icon-before-title .sp-drop-area:after {
+  -webkit-box-ordinal-group: 5;
+  -webkit-order: 4;
+      -ms-flex-order: 4;
+          order: 4;
+}
+.sp-file-upload.sp-has-icon.sp-icon-before-title p:first-child,
+.sp-file-upload.sp-has-icon.sp-icon-before-title .sp-text-before-button {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.sp-file-upload.sp-has-icon.sp-icon-before-title .sp-btn {
+  -webkit-box-ordinal-group: 4;
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3;
+}
+.sp-file-upload.sp-has-icon.sp-icon-before-title .sp-btn + p {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.sp-file-upload.sp-has-icon.sp-icon-before-title p:last-child,
+.sp-file-upload.sp-has-icon.sp-icon-before-title .sp-text-hint {
+  -webkit-box-ordinal-group: 6;
+  -webkit-order: 5;
+      -ms-flex-order: 5;
+          order: 5;
+  margin-top: -16px;
+}
+.sp-file-upload.sp-has-icon.sp-icon-after-title .sp-drop-area:before {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-bottom: -16px;
+}
+.sp-file-upload.sp-has-icon.sp-icon-after-title .sp-drop-area:after {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.sp-file-upload.sp-has-icon.sp-icon-after-title p:first-child,
+.sp-file-upload.sp-has-icon.sp-icon-after-title .sp-text-before-button {
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+}
+.sp-file-upload.sp-has-icon.sp-icon-after-title .sp-btn {
+  -webkit-box-ordinal-group: 5;
+  -webkit-order: 4;
+      -ms-flex-order: 4;
+          order: 4;
+}
+.sp-file-upload.sp-has-icon.sp-icon-after-title .sp-btn + p {
+  -webkit-box-ordinal-group: 4;
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3;
+}
+.sp-file-upload.sp-has-icon.sp-icon-after-title p:last-child,
+.sp-file-upload.sp-has-icon.sp-icon-after-title .sp-text-hint {
+  -webkit-box-ordinal-group: 6;
+  -webkit-order: 5;
+      -ms-flex-order: 5;
+          order: 5;
+}
+.sp-file-upload.sp-has-icon p:last-child,
+.sp-file-upload.sp-has-icon .sp-text-hint,
+.sp-file-upload.sp-has-icon .sp-text-before-button,
+.sp-file-upload.sp-has-icon p:first-child {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+@media (max-width: 991px) {
+  .sp-file-upload.sp-has-icon .sp-drop-area:before, .sp-file-upload.sp-has-icon.sp-inverted .sp-drop-area:before {
+    display: none;
+  }
+  .sp-file-upload.sp-has-icon.sp-icon-after-title .sp-drop-area:after {
+    display: none;
+  }
+  .sp-file-upload.sp-has-icon .sp-btn + p,
+  .sp-file-upload.sp-has-icon .sp-text-after-button {
+    display: none;
+  }
+}
+.sp-file-upload.sp-no-icon p:last-child,
+.sp-file-upload.sp-no-icon p:first-child,
+.sp-file-upload.sp-no-icon .sp-text-before-button,
+.sp-file-upload.sp-no-icon .sp-text-hint {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+.sp-file-upload.sp-no-icon p:first-child,
+.sp-file-upload.sp-no-icon .sp-text-before-button {
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+}
+.sp-file-upload.sp-no-icon .sp-btn {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.sp-file-upload.sp-no-icon .sp-btn + p,
+.sp-file-upload.sp-no-icon .sp-text-after-button {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.sp-file-upload.sp-no-icon p:last-child,
+.sp-file-upload.sp-no-icon .sp-text-hint {
+  -webkit-box-ordinal-group: 5;
+  -webkit-order: 4;
+      -ms-flex-order: 4;
+          order: 4;
+}
+@media (max-width: 991px) {
+  .sp-file-upload.sp-no-icon .sp-btn + p,
+  .sp-file-upload.sp-no-icon .sp-text-after-button {
+    display: none;
+  }
+}

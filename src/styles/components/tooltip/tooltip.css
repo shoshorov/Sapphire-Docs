@@ -1,0 +1,125 @@
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/styles/tooltip/tooltip.scss ***!
+  \****************************************************************************************************************************************************************************************************************************/
+/*#region color-primary*/
+/*#endregion*/
+/*#region color-secondary*/
+/*#endregion*/
+/*#region color-accent*/
+/*#endregion*/
+/*#region color-neutral*/
+/*#endregion*/
+/*#region color-error*/
+/*#endregion*/
+/*#region color-success*/
+/*#endregion*/
+/*#region color-warning*/
+/*#endregion*/
+/*#region color-info*/
+/*#endregion*/
+/*#region color-utility*/
+/*#endregion*/
+/*#region radius*/
+/*#endregion*/
+/*#region spacing*/
+/*#endregion*/
+/*#region border-width*/
+/*#endregion*/
+/*#region Typography*/
+/*#region font-size*/
+/*#endregion*/
+/*#region font-weight*/
+/*#endregion*/
+/*#region line-height*/
+/*#endregion*/
+/*#endregion*/
+/*#region shadow*/
+/*#endregion*/
+/*#region size*/
+/*#endregion*/
+/*#region color-base*/
+/*#endregion*/
+/*#region color-special*/
+/*#endregion*/
+/*#region sp-panel*/
+/*#endregion*/
+/*#region alert/modal icons*/
+/*#endregion*/
+.sp-tooltip {
+  --tooltip-text: #ffffff;
+  --tooltip-bg: #6d7688;
+  display: block;
+  position: absolute;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: 0.813rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  white-space: normal;
+  word-spacing: normal;
+  line-break: auto;
+  word-wrap: break-word;
+  opacity: 0;
+}
+.sp-tooltip.show {
+  opacity: 1;
+}
+.sp-tooltip:before {
+  content: "";
+  position: absolute;
+  border: solid transparent;
+}
+.sp-tooltip .sp-tooltip-inner {
+  max-width: 200px;
+  padding: 0.75rem;
+  color: var(--tooltip-text);
+  background-color: var(--tooltip-bg);
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.sp-tooltip.top:before {
+  top: 99%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-width: 0.625rem 0.5rem 0;
+  border-top-color: var(--tooltip-bg);
+}
+.sp-tooltip.bottom:before {
+  bottom: 99%;
+  top: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-width: 0 0.5rem 0.625rem;
+  border-bottom-color: var(--tooltip-bg);
+}
+.sp-tooltip.right:before {
+  left: -0.6rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-width: 0.5rem 0.625rem 0.5rem 0;
+  border-right-color: var(--tooltip-bg);
+}
+.sp-tooltip.left:before {
+  right: -0.6rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+      -ms-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+  border-width: 0.5rem 0.625rem 0.5rem 0;
+  border-right-color: var(--tooltip-bg);
+}

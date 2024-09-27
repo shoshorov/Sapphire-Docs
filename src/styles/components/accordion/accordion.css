@@ -1,0 +1,177 @@
+/*!********************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/styles/accordion/accordion.scss ***!
+  \********************************************************************************************************************************************************************************************************************************/
+/*#region color-primary*/
+/*#endregion*/
+/*#region color-secondary*/
+/*#endregion*/
+/*#region color-accent*/
+/*#endregion*/
+/*#region color-neutral*/
+/*#endregion*/
+/*#region color-error*/
+/*#endregion*/
+/*#region color-success*/
+/*#endregion*/
+/*#region color-warning*/
+/*#endregion*/
+/*#region color-info*/
+/*#endregion*/
+/*#region color-utility*/
+/*#endregion*/
+/*#region radius*/
+/*#endregion*/
+/*#region spacing*/
+/*#endregion*/
+/*#region border-width*/
+/*#endregion*/
+/*#region Typography*/
+/*#region font-size*/
+/*#endregion*/
+/*#region font-weight*/
+/*#endregion*/
+/*#region line-height*/
+/*#endregion*/
+/*#endregion*/
+/*#region shadow*/
+/*#endregion*/
+/*#region size*/
+/*#endregion*/
+/*#region color-base*/
+/*#endregion*/
+/*#region color-special*/
+/*#endregion*/
+/*#region sp-panel*/
+/*#endregion*/
+/*#region alert/modal icons*/
+/*#endregion*/
+.sp-accordion {
+  --accordion-color: #11152a;
+  --accordion-bg: #ffffff;
+  --accordion-border-color: #cfd5e1;
+  --accordion-btn-color: #11152a;
+  --accordion-btn-bg: #ffffff;
+  --accordion-btn-icon: url("data:image/svg+xml,<svg width=\"16\" height=\"18\" viewBox=\"0 0 16 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7.46875 13.5312L1.46875 7.53125C1.15625 7.25 1.15625 6.78125 1.46875 6.46875C1.75 6.1875 2.21875 6.1875 2.53125 6.46875L8 11.9688L13.4688 6.5C13.75 6.1875 14.2188 6.1875 14.5312 6.5C14.8125 6.78125 14.8125 7.25 14.5312 7.53125L8.5 13.5312C8.21875 13.8438 7.75 13.8438 7.46875 13.5312Z\" fill=\"%2311152a\"/></svg>");
+  --accordion-active-color: #11152a;
+  --accordion-active-bg: #ffffff;
+}
+.sp-accordion .sp-accordion-item {
+  color: var(--accordion-color);
+  background-color: var(--accordion-bg);
+  border-top: 1px solid var(--accordion-border-color);
+  border-radius: 0rem;
+}
+.sp-accordion .sp-accordion-item .sp-accordion-header {
+  margin-bottom: 0;
+}
+.sp-accordion .sp-accordion-item .sp-accordion-header .sp-accordion-button {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  padding: 1rem 0.75rem;
+  font-size: 1.188rem;
+  font-weight: 600;
+  color: var(--accordion-btn-color);
+  text-align: left;
+  line-height: 1.5;
+  background-color: var(--accordion-btn-bg);
+  border: 0;
+  border-radius: 0rem;
+  overflow-anchor: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+.sp-accordion .sp-accordion-item .sp-accordion-header .sp-accordion-button:after {
+  display: none;
+}
+.sp-accordion .sp-accordion-item .sp-accordion-header .sp-accordion-button:after, .sp-accordion .sp-accordion-item .sp-accordion-header .sp-accordion-button:before {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  content: "";
+  width: 1rem;
+  height: 1.125rem;
+  background-image: var(--accordion-btn-icon);
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  margin-top: 5px;
+}
+.sp-accordion .sp-accordion-item .sp-accordion-header .sp-accordion-button:not(.collapsed) {
+  color: var(--accordion-active-color);
+  background-color: var(--accordion-active-bg);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-weight: 600;
+}
+.sp-accordion .sp-accordion-item .sp-accordion-header .sp-accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.sp-accordion .sp-accordion-item .sp-accordion-header .sp-accordion-button:not(.collapsed)::after, .sp-accordion .sp-accordion-item .sp-accordion-header .sp-accordion-button:not(.collapsed)::before {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.sp-accordion .sp-accordion-item .sp-accordion-header .sp-accordion-button .sp-accordion-header-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  gap: 0.75rem;
+}
+.sp-accordion .sp-accordion-item .sp-accordion-header .sp-accordion-button .sp-accordion-header-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  gap: 0.75rem;
+}
+.sp-accordion .sp-accordion-item .sp-accordion-header .sp-accordion-button i {
+  font-weight: 300;
+  font-size: 1rem;
+}
+.sp-accordion .sp-accordion-item .sp-accordion-body {
+  padding: 1rem;
+}
+.sp-accordion .sp-accordion-item.sp-accordion-item-disabled {
+  cursor: not-allowed;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.sp-accordion .sp-accordion-item.sp-accordion-item-disabled .sp-accordion-button {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.sp-has-right-arrow .sp-accordion-button:before {
+  display: none;
+}
+.sp-has-right-arrow .sp-accordion-button:after {
+  display: block !important;
+}

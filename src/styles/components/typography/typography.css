@@ -1,0 +1,120 @@
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/styles/typography/typography.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+/*#region color-primary*/
+/*#endregion*/
+/*#region color-secondary*/
+/*#endregion*/
+/*#region color-accent*/
+/*#endregion*/
+/*#region color-neutral*/
+/*#endregion*/
+/*#region color-error*/
+/*#endregion*/
+/*#region color-success*/
+/*#endregion*/
+/*#region color-warning*/
+/*#endregion*/
+/*#region color-info*/
+/*#endregion*/
+/*#region color-utility*/
+/*#endregion*/
+/*#region radius*/
+/*#endregion*/
+/*#region spacing*/
+/*#endregion*/
+/*#region border-width*/
+/*#endregion*/
+/*#region Typography*/
+/*#region font-size*/
+/*#endregion*/
+/*#region font-weight*/
+/*#endregion*/
+/*#region line-height*/
+/*#endregion*/
+/*#endregion*/
+/*#region shadow*/
+/*#endregion*/
+/*#region size*/
+/*#endregion*/
+/*#region color-base*/
+/*#endregion*/
+/*#region color-special*/
+/*#endregion*/
+/*#region sp-panel*/
+/*#endregion*/
+/*#region alert/modal icons*/
+/*#endregion*/
+.sp-text {
+  --text-color: #11152a;
+  line-height: 1.4;
+  margin: 0;
+}
+.sp-text.sp-text-xs {
+  font-size: 0.688rem !important;
+}
+.sp-text.sp-text-s {
+  font-size: 0.813rem !important;
+}
+.sp-text.sp-text-m {
+  font-size: 1rem !important;
+}
+.sp-text.sp-text-l {
+  font-size: 1.188rem !important;
+}
+.sp-text.sp-text-xl {
+  font-size: 1.438rem !important;
+}
+.sp-text.sp-text-2xl {
+  font-size: 1.75rem !important;
+}
+.sp-text.sp-text-3xl {
+  font-size: 2rem !important;
+}
+.sp-text.sp-text-4xl {
+  font-size: 2.25rem !important;
+}
+.sp-text.sp-text-5xl {
+  font-size: 2.5rem !important;
+}
+.sp-text.sp-text-2xl {
+  font-size: 1.438rem !important;
+}
+.sp-text.sp-text-4xl {
+  font-size: 1.75rem !important;
+}
+@media (min-width: 768px) {
+  .sp-text.sp-text-md-xs {
+    font-size: 0.688rem !important;
+  }
+  .sp-text.sp-text-md-s {
+    font-size: 0.813rem !important;
+  }
+  .sp-text.sp-text-md-m {
+    font-size: 1rem !important;
+  }
+  .sp-text.sp-text-md-l {
+    font-size: 1.188rem !important;
+  }
+  .sp-text.sp-text-md-xl {
+    font-size: 1.438rem !important;
+  }
+  .sp-text.sp-text-md-2xl {
+    font-size: 1.75rem !important;
+  }
+  .sp-text.sp-text-md-3xl {
+    font-size: 2rem !important;
+  }
+  .sp-text.sp-text-md-4xl {
+    font-size: 2.25rem !important;
+  }
+  .sp-text.sp-text-md-5xl {
+    font-size: 2.5rem !important;
+  }
+  .sp-text.sp-text-2xl {
+    font-size: 1.75rem !important;
+  }
+  .sp-text.sp-text-4xl {
+    font-size: 2.25rem !important;
+  }
+}

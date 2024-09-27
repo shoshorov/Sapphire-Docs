@@ -1,0 +1,67 @@
+[
+  {
+    "name": "$radius-0",
+    "value": "0rem",
+    "compiledValue": "0rem"
+  },
+  {
+    "name": "$radius-xs",
+    "value": "0.25rem",
+    "compiledValue": "0.25rem"
+  },
+  {
+    "name": "$radius-s",
+    "value": "0.5rem",
+    "compiledValue": "0.5rem"
+  },
+  {
+    "name": "$radius-s-m",
+    "value": "0.75rem",
+    "compiledValue": "0.75rem"
+  },
+  {
+    "name": "$radius-m",
+    "value": "1rem",
+    "compiledValue": "1rem"
+  },
+  {
+    "name": "$radius-m-m",
+    "value": "1.25rem",
+    "compiledValue": "1.25rem"
+  },
+  {
+    "name": "$radius-l",
+    "value": "1.5rem",
+    "compiledValue": "1.5rem"
+  },
+  {
+    "name": "$radius-xl",
+    "value": "2rem",
+    "compiledValue": "2rem"
+  },
+  {
+    "name": "$radius-2xl",
+    "value": "2.5rem",
+    "compiledValue": "2.5rem"
+  },
+  {
+    "name": "$radius-3xl",
+    "value": "3rem",
+    "compiledValue": "3rem"
+  },
+  {
+    "name": "$radius-4xl",
+    "value": "3.5rem",
+    "compiledValue": "3.5rem"
+  },
+  {
+    "name": "$radius-5xl",
+    "value": "4rem",
+    "compiledValue": "4rem"
+  },
+  {
+    "name": "$radius-6xl",
+    "value": "5rem",
+    "compiledValue": "5rem"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "$line-height-2xs",
+    "value": "1",
+    "compiledValue": "1"
+  },
+  {
+    "name": "$line-height-xs",
+    "value": "1.1",
+    "compiledValue": "1.1"
+  },
+  {
+    "name": "$line-height-s",
+    "value": "1.2",
+    "compiledValue": "1.2"
+  },
+  {
+    "name": "$line-height-s-m",
+    "value": "1.3",
+    "compiledValue": "1.3"
+  },
+  {
+    "name": "$line-height-m",
+    "value": "1.4",
+    "compiledValue": "1.4"
+  },
+  {
+    "name": "$line-height-m-l",
+    "value": "1.5",
+    "compiledValue": "1.5"
+  },
+  {
+    "name": "$line-height-l",
+    "value": "1.6",
+    "compiledValue": "1.6"
+  }
+]

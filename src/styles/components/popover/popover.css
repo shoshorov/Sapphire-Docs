@@ -1,0 +1,218 @@
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/styles/popover/popover.scss ***!
+  \****************************************************************************************************************************************************************************************************************************/
+/*#region color-primary*/
+/*#endregion*/
+/*#region color-secondary*/
+/*#endregion*/
+/*#region color-accent*/
+/*#endregion*/
+/*#region color-neutral*/
+/*#endregion*/
+/*#region color-error*/
+/*#endregion*/
+/*#region color-success*/
+/*#endregion*/
+/*#region color-warning*/
+/*#endregion*/
+/*#region color-info*/
+/*#endregion*/
+/*#region color-utility*/
+/*#endregion*/
+/*#region radius*/
+/*#endregion*/
+/*#region spacing*/
+/*#endregion*/
+/*#region border-width*/
+/*#endregion*/
+/*#region Typography*/
+/*#region font-size*/
+/*#endregion*/
+/*#region font-weight*/
+/*#endregion*/
+/*#region line-height*/
+/*#endregion*/
+/*#endregion*/
+/*#region shadow*/
+/*#endregion*/
+/*#region size*/
+/*#endregion*/
+/*#region color-base*/
+/*#endregion*/
+/*#region color-special*/
+/*#endregion*/
+/*#region sp-panel*/
+/*#endregion*/
+/*#region alert/modal icons*/
+/*#endregion*/
+.sp-popover {
+  --popover-text: #11152a;
+  --popover-bg: #ffffff;
+  --popover-border: #cfd5e1;
+  display: block;
+  position: absolute;
+  font-size: 0.813rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  white-space: normal;
+  word-spacing: normal;
+  line-break: auto;
+  word-wrap: break-word;
+  opacity: 0;
+}
+.sp-popover.show {
+  opacity: 1;
+}
+.sp-popover .sp-popover-body {
+  max-width: 200px;
+  padding: 0.75rem;
+  color: var(--popover-text);
+  background-color: var(--popover-bg);
+  border: 1px solid var(--popover-border);
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.sp-popover:before, .sp-popover:after {
+  content: "";
+  position: absolute;
+  border: solid transparent;
+}
+.sp-popover.top:before, .sp-popover.top:after {
+  top: 99%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-width: 0.625rem 0.5rem 0;
+  border-top-color: #cfd5e1;
+}
+.sp-popover.top:after {
+  border-top-color: #ffffff;
+  top: 96%;
+}
+.sp-popover.bottom:before, .sp-popover.bottom:after {
+  bottom: 99%;
+  top: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-width: 0 0.5rem 0.625rem;
+  border-bottom-color: var(--popover-border);
+}
+.sp-popover.bottom:after {
+  bottom: 97%;
+  border-bottom-color: #ffffff;
+}
+.sp-popover.left:before, .sp-popover.left:after {
+  right: -0.6rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+      -ms-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+  border-width: 0.5rem 0.625rem 0.5rem 0;
+  border-right-color: #cfd5e1;
+}
+.sp-popover.left:after {
+  border-right-color: #ffffff;
+  right: -8.1px;
+}
+.sp-popover.right:before, .sp-popover.right:after {
+  left: -0.6rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-width: 0.5rem 0.625rem 0.5rem 0;
+  border-right-color: #cfd5e1;
+}
+.sp-popover.right:after {
+  border-right-color: #ffffff;
+  left: -8.1px;
+}
+.sp-popover.sp-select-popover {
+  font-size: medium;
+  font-size: initial;
+}
+.sp-popover.sp-select-popover.sp-popover-has-footer .sp-popover-body {
+  max-height: none;
+}
+.sp-popover.sp-select-popover.sp-popover-empty .sp-popover-body {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+  height: 0;
+}
+.sp-popover.sp-select-popover .sp-popover-body {
+  max-width: none;
+  max-height: 250px;
+  overflow: auto;
+  padding: 0;
+}
+.sp-popover.sp-select-popover .sp-scroll-container {
+  overflow-y: auto;
+  max-height: 250px;
+}
+.sp-popover.sp-select-popover .sp-footer {
+  padding: 0.25rem 1rem;
+  border-top: 1px solid var(--popover-border);
+}
+.sp-popover.sp-datepicker-popover .sp-popover-body {
+  max-width: none;
+  padding: 0;
+}
+.sp-popover.sp-arrow-bottom-right:before, .sp-popover.sp-arrow-bottom-right:after {
+  border-width: 0.625rem 0.5rem 0;
+  right: 28px;
+}
+.sp-popover.sp-arrow-bottom-right:after {
+  border-top-color: #ffffff;
+  bottom: -7px;
+}
+.sp-popover.sp-arrow-bottom-right:before {
+  border-top-color: #cfd5e1;
+  bottom: -9px;
+}
+.sp-popover.sp-arrow-bottom-left:before, .sp-popover.sp-arrow-bottom-left:after {
+  border-width: 0.625rem 0.5rem 0;
+  left: 16px;
+}
+.sp-popover.sp-arrow-bottom-left:after {
+  border-top-color: #ffffff;
+  bottom: -7px;
+}
+.sp-popover.sp-arrow-bottom-left:before {
+  border-top-color: #cfd5e1;
+  bottom: -9px;
+}
+.sp-popover.sp-arrow-top-right:before, .sp-popover.sp-arrow-top-right:after {
+  border-width: 0 0.5rem 0.625rem;
+  right: 16px;
+}
+.sp-popover.sp-arrow-top-right:after {
+  border-bottom-color: #ffffff;
+  top: -7px;
+}
+.sp-popover.sp-arrow-top-right:before {
+  border-bottom-color: #cfd5e1;
+  top: -9px;
+}
+.sp-popover.sp-arrow-top-left:before, .sp-popover.sp-arrow-top-left:after {
+  border-width: 0 0.5rem 0.625rem;
+  left: 16px;
+}
+.sp-popover.sp-arrow-top-left:after {
+  border-bottom-color: #ffffff;
+  top: -7px;
+}
+.sp-popover.sp-arrow-top-left:before {
+  border-bottom-color: #cfd5e1;
+  top: -9px;
+}

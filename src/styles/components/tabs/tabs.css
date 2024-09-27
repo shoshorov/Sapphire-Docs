@@ -1,0 +1,129 @@
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/styles/tabs/tabs.scss ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/*#region color-primary*/
+/*#endregion*/
+/*#region color-secondary*/
+/*#endregion*/
+/*#region color-accent*/
+/*#endregion*/
+/*#region color-neutral*/
+/*#endregion*/
+/*#region color-error*/
+/*#endregion*/
+/*#region color-success*/
+/*#endregion*/
+/*#region color-warning*/
+/*#endregion*/
+/*#region color-info*/
+/*#endregion*/
+/*#region color-utility*/
+/*#endregion*/
+/*#region radius*/
+/*#endregion*/
+/*#region spacing*/
+/*#endregion*/
+/*#region border-width*/
+/*#endregion*/
+/*#region Typography*/
+/*#region font-size*/
+/*#endregion*/
+/*#region font-weight*/
+/*#endregion*/
+/*#region line-height*/
+/*#endregion*/
+/*#endregion*/
+/*#region shadow*/
+/*#endregion*/
+/*#region size*/
+/*#endregion*/
+/*#region color-base*/
+/*#endregion*/
+/*#region color-special*/
+/*#endregion*/
+/*#region sp-panel*/
+/*#endregion*/
+/*#region alert/modal icons*/
+/*#endregion*/
+.sp-tabs .sp-nav-tabs {
+  --tab-text: #6d7688;
+  --tab-active-text: #11152a;
+  --tab-bg: transparent;
+  --tab-active-bg: transparent;
+  --tab-border-bottom: #0061e8;
+  --tabs-border-bottom: #cfd5e1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  border-bottom: 1px solid var(--tabs-border-bottom);
+}
+.sp-tabs .sp-nav-tabs .sp-nav-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  width: 100%;
+}
+.sp-tabs .sp-nav-tabs .sp-nav-item i {
+  display: none;
+}
+.sp-tabs .sp-nav-tabs .sp-nav-item.sp-has-icon-left i {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1.375rem;
+  height: 1.375rem;
+  font-size: 1.25rem;
+}
+.sp-tabs .sp-nav-tabs .sp-nav-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.625rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--tab-text);
+  text-decoration: none;
+  background: var(--tab-bg);
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+}
+.sp-tabs .sp-nav-tabs .sp-nav-link:hover {
+  color: var(--tab-text);
+  border-bottom: 4px solid var(--tab-border-bottom);
+}
+.sp-tabs .sp-nav-tabs .sp-nav-link.active,
+.sp-tabs .sp-nav-tabs .sp-nav-item.show .sp-nav-link {
+  color: var(--tab-active-text);
+  background-color: var(--tab-active-bg);
+  border-bottom: 4px solid var(--tab-border-bottom);
+}
+.sp-tabs .sp-tab-content .sp-tab-panel {
+  display: none;
+}
+.sp-tabs .sp-tab-content .active {
+  display: block;
+}
+.sp-tabs.sp-tabs-shrink .sp-nav-tabs .sp-nav-item {
+  width: inherit;
+}

@@ -1,0 +1,96 @@
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/styles/breadcrumb/breadcrumb.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+/*#region color-primary*/
+/*#endregion*/
+/*#region color-secondary*/
+/*#endregion*/
+/*#region color-accent*/
+/*#endregion*/
+/*#region color-neutral*/
+/*#endregion*/
+/*#region color-error*/
+/*#endregion*/
+/*#region color-success*/
+/*#endregion*/
+/*#region color-warning*/
+/*#endregion*/
+/*#region color-info*/
+/*#endregion*/
+/*#region color-utility*/
+/*#endregion*/
+/*#region radius*/
+/*#endregion*/
+/*#region spacing*/
+/*#endregion*/
+/*#region border-width*/
+/*#endregion*/
+/*#region Typography*/
+/*#region font-size*/
+/*#endregion*/
+/*#region font-weight*/
+/*#endregion*/
+/*#region line-height*/
+/*#endregion*/
+/*#endregion*/
+/*#region shadow*/
+/*#endregion*/
+/*#region size*/
+/*#endregion*/
+/*#region color-base*/
+/*#endregion*/
+/*#region color-special*/
+/*#endregion*/
+/*#region sp-panel*/
+/*#endregion*/
+/*#region alert/modal icons*/
+/*#endregion*/
+.sp-breadcrumb {
+  --breadcrumb-text-active: #4c5469;
+  --breadcrumb-divider: #4c5469;
+  --breadcrumb-link: #0061e8;
+  --breadcrumb-link-hover: #0061e8;
+  --breadcrumb-btn-dropdown: #0061e8;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  list-style: none;
+}
+.sp-breadcrumb .sp-breadcrumb-item a {
+  color: var(--breadcrumb-link);
+  text-decoration: none;
+}
+.sp-breadcrumb .sp-breadcrumb-item a:hover {
+  color: var(--breadcrumb-link-hover);
+  text-decoration: underline;
+}
+.sp-breadcrumb .sp-breadcrumb-item a.dropdown-toggle::after {
+  display: none;
+}
+.sp-breadcrumb .sp-breadcrumb-item + .sp-breadcrumb-item {
+  padding-left: 0.5rem;
+}
+.sp-breadcrumb .sp-breadcrumb-item + .sp-breadcrumb-item:before {
+  content: "/";
+  font-family: "Font Awesome 6 Pro";
+  font-size: 0.75rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: var(--breadcrumb-divider);
+}
+.sp-breadcrumb .sp-breadcrumb-item.sp-active {
+  color: var(--breadcrumb-text-active);
+}
+.sp-breadcrumb .sp-breadcrumb-item .sp-breadcrumb-btn {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--breadcrumb-btn-dropdown);
+}

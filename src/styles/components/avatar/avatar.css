@@ -1,0 +1,155 @@
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/styles/avatar/avatar.scss ***!
+  \**************************************************************************************************************************************************************************************************************************/
+/*#region color-primary*/
+/*#endregion*/
+/*#region color-secondary*/
+/*#endregion*/
+/*#region color-accent*/
+/*#endregion*/
+/*#region color-neutral*/
+/*#endregion*/
+/*#region color-error*/
+/*#endregion*/
+/*#region color-success*/
+/*#endregion*/
+/*#region color-warning*/
+/*#endregion*/
+/*#region color-info*/
+/*#endregion*/
+/*#region color-utility*/
+/*#endregion*/
+/*#region radius*/
+/*#endregion*/
+/*#region spacing*/
+/*#endregion*/
+/*#region border-width*/
+/*#endregion*/
+/*#region Typography*/
+/*#region font-size*/
+/*#endregion*/
+/*#region font-weight*/
+/*#endregion*/
+/*#region line-height*/
+/*#endregion*/
+/*#endregion*/
+/*#region shadow*/
+/*#endregion*/
+/*#region size*/
+/*#endregion*/
+/*#region color-base*/
+/*#endregion*/
+/*#region color-special*/
+/*#endregion*/
+/*#region sp-panel*/
+/*#endregion*/
+/*#region alert/modal icons*/
+/*#endregion*/
+.sp-avatar {
+  --avatar-initials: #11152a;
+  --avatar-default-bg: #cfd5e1;
+  color: var(--avatar-initials);
+  background-color: var(--avatar-default-bg);
+  border-radius: 5rem;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  /*#region special-color*/
+  /*#endregion*/
+}
+.sp-avatar.sp-avatar-l {
+  height: 6.25rem;
+  width: 6.25rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.sp-avatar.sp-avatar-m {
+  height: 3rem;
+  width: 3rem;
+  font-weight: 600;
+}
+.sp-avatar.sp-avatar-xs {
+  height: 1rem;
+  width: 1rem;
+  font-weight: 400;
+  font-size: 6px;
+}
+.sp-avatar i.fa-light {
+  text-shadow: 0 0 0.013rem currentColor;
+}
+.sp-avatar.sp-special-color-1, .sp-avatar.sp-special-color-1-400, .sp-avatar.sp-special-color-1-600, .sp-avatar.sp-special-color-2, .sp-avatar.sp-special-color-2-400, .sp-avatar.sp-special-color-2-600, .sp-avatar.sp-special-color-3, .sp-avatar.sp-special-color-3-400, .sp-avatar.sp-special-color-3-600, .sp-avatar.sp-special-color-4, .sp-avatar.sp-special-color-4-400, .sp-avatar.sp-special-color-4-600, .sp-avatar.sp-special-color-5, .sp-avatar.sp-special-color-5-400, .sp-avatar.sp-special-color-5-600, .sp-avatar.sp-special-color-6, .sp-avatar.sp-special-color-6-400, .sp-avatar.sp-special-color-6-600, .sp-avatar.sp-special-color-7, .sp-avatar.sp-special-color-7-400, .sp-avatar.sp-special-color-7-600, .sp-avatar.sp-special-color-8, .sp-avatar.sp-special-color-8-400, .sp-avatar.sp-special-color-8-600, .sp-avatar.sp-special-color-9, .sp-avatar.sp-special-color-9-400, .sp-avatar.sp-special-color-9-600, .sp-avatar.sp-special-color-10, .sp-avatar.sp-special-color-10-400, .sp-avatar.sp-special-color-10-600 {
+  background-color: var(--special-color);
+}
+
+img.sp-avatar {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sp-avatar-stack {
+  --avatar-last-bg: #dfe4ed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  cursor: pointer;
+}
+.sp-avatar-stack.sp-size-xs {
+  width: 30px;
+}
+.sp-avatar-stack.sp-size-xs .sp-avatar {
+  margin-right: -10px;
+}
+.sp-avatar-stack.sp-size-m {
+  width: 84px;
+}
+.sp-avatar-stack.sp-size-m .sp-avatar {
+  margin-right: -30px;
+}
+.sp-avatar-stack.sp-size-l {
+  width: 180px;
+}
+.sp-avatar-stack.sp-size-l .sp-avatar {
+  margin-right: -60px;
+}
+.sp-avatar-stack .sp-avatar:last-child {
+  margin-right: 0;
+  background-color: var(--avatar-last-bg);
+}
+
+.sp-avatar-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sp-avatar-group.sp-size-xs {
+  width: 30px;
+}
+.sp-avatar-group.sp-size-xs .sp-avatar + .sp-avatar {
+  margin-left: -4px;
+}
+.sp-avatar-group.sp-size-m {
+  width: 84px;
+}
+.sp-avatar-group.sp-size-m .sp-avatar + .sp-avatar {
+  margin-left: -12px;
+}
+.sp-avatar-group.sp-size-l {
+  width: 180px;
+}
+.sp-avatar-group.sp-size-l .sp-avatar + .sp-avatar {
+  margin-left: -22px;
+}

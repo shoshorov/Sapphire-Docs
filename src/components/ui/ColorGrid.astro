@@ -1,0 +1,83 @@
+---
+// Import the JSON file
+import colors from "../../data/colors.json";
+
+interface ColorGroup {
+  [key: string]: {
+    name: string;
+    value: string;
+    compiledValue: string
+  }[];
+}
+
+const colorData: ColorGroup = colors;
+---
+<div class="not-content">
+{
+  Object.entries(colorData).map(([groupName, colors]) => (
+    <table class="color-palette table">
+      <caption>{groupName}</caption>
+      <thead>
+        <tr>
+          <th>Swatch</th>
+          <th>SCSS Variable</th>
+          <th>HEX Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        {colors.map((color) => (
+          <tr class="color-list">
+            <td class="color-item">
+              <div
+                class="color-swatch"
+                style={`background-color: ${color.compiledValue};`}
+              />
+            </td>
+            <td class="color-name"><code>{color.name}</code></td>
+            <td class="color-value"><code>{color.value}</code></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  ))
+}
+</div>
+<style>
+  .color-palette {
+    border: 1px solid var(--sl-color-gray-6);
+    border-top: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-radius: 0 0 0.5rem 0.5rem;   
+    margin-top: 1.5rem;
+    max-width: 80rem;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .color-palette caption {
+    background-color: var(--sl-color-gray-7);
+    border: 1px solid var(--sl-color-gray-6);
+   border-radius: 0.5rem 0.5rem 0 0;
+   font-size: 0.875rem;
+   font-weight: 600;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .color-palette th {
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  .color-palette :where(th,td) {
+    text-align: left;   
+    padding: 1rem;
+    border-bottom: 1px solid var(--sl-color-gray-6);
+  }
+  .color-palette tr:last-child td {
+    border-bottom: 0;
+  }
+  .color-swatch {
+    width: 100%;
+    height: 3rem;
+  }
+</style>

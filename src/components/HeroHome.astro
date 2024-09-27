@@ -1,0 +1,15 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/Hero.astro';
+
+const isHomepage = Astro.props.slug === '';
+---
+{
+  isHomepage ? (
+<div class="home-page-bg">
+    <Default {...Astro.props}><slot /></Default>
+</div>
+): (
+    <Default {...Astro.props}><slot /></Default>
+)
+}
