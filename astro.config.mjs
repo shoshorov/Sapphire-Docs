@@ -49,7 +49,7 @@ export default defineConfig({
 				{ label: 'Foundations',
 					items: [
 						{label: 'Accessibility', slug: 'foundations/accessibility'},
-						{label: 'Colors', slug: 'foundations/colors'},
+						{label: 'Colors', slug: 'foundations/colors', badge:{ text: 'new', variant: 'success' }},
 						{label: 'Typography', slug: 'foundations/typograhie'},
 						{label: 'Icons', slug: 'foundations/icons'},
 						{label: 'Grid', slug: 'foundations/grid'},
